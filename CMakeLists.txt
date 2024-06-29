@@ -4,9 +4,9 @@
 #set (RELEASE 1)
 
 cmake_minimum_required(VERSION 3.12)
-include($ENV{PICO_SDK_PATH}/pico_sdk_init.cmake)
+include(../PicoPiFi/pico-sdk/pico_sdk_init.cmake)
 pico_sdk_init()
-include($ENV{PICO_SDK_PATH}/tools/CMakeLists.txt)
+include(../PicoPiFi/pico-sdk/tools/CMakeLists.txt)
 
 # Set name of project (as PROJECT_NAME) and C/C++ standards
 project(picowi C CXX ASM)
@@ -47,6 +47,57 @@ endif ()
 add_library(picowi ${PICOWI_SRCE} ${FW_FILE})
 pico_generate_pio_header(${PROJECT_NAME} ${CMAKE_CURRENT_LIST_DIR}/lib/picowi_pio.pio)
 target_link_libraries(picowi pico_stdlib hardware_pio hardware_dma)
+
+add_compile_options(-Wall
+        -Wno-format          # int != int32_t as far as the compiler is concerned because gcc has int32_t as long int
+        -Wno-unused-function # we have some for the docs that aren't called
+        -Wno-maybe-uninitialized
+        )
+
+set(cherry_dir ../PicoPiFi/CherryUSB/)
+
+set(LWIP_DIR ../PicoPiFi/pico-sdk/lib/lwip)
+set (LWIP_INCLUDE_DIRS
+    "${LWIP_DIR}/src/include"
+    "${CMAKE_CURRENT_SOURCE_DIR}"
+)
+
+include_directories(${CMAKE_CURRENT_LIST_DIR}
+    ${cherry_dir}/class/cdc
+    ${cherry_dir}/class/msc
+    ${cherry_dir}/class/wireless
+
+    ${cherry_dir}/common
+    ${cherry_dir}/core
+    ${cherry_dir}/demo
+    ${cherry_dir}/port/rp2040
+	#lwip directory:-
+	${LWIP_INCLUDE_DIRS}
+	#lwipopts.h ke liye
+	${CMAKE_CURRENT_LIST_DIR}/src
+	#arch/cc.h ke liye:-
+	${CMAKE_CURRENT_LIST_DIR}/common
+)
+
+
+add_library(cherryusblib STATIC)
+target_sources(cherryusblib PRIVATE ${cherry_dir}/port/rp2040/usb_dc_rp2040.c)
+target_sources(cherryusblib PRIVATE ${cherry_dir}/class/cdc/usbd_cdc.c)
+target_sources(cherryusblib PRIVATE ${cherry_dir}/class/msc/usbd_msc.c)
+target_sources(cherryusblib PRIVATE ${cherry_dir}/class/wireless/usbd_rndis.c)
+target_sources(cherryusblib PRIVATE ${cherry_dir}/core/usbd_core.c)
+
+set(CONFIG_CHERRYUSB 1)
+set(CONFIG_USB_DEVICE 1)
+set(CONFIG_USB_DEVICE_RNDIS 1)
+set(CONFIG_LWIP 1)
+set(CONFIG_LWIP_HTTPSRV 1)
+
+if("${CMAKE_BUILD_TYPE}" STREQUAL "")
+    SET(CMAKE_BUILD_TYPE flash_xip)
+endif()
+
+
 
 # Create 'blink' executable
 add_executable(blink blink.c)
