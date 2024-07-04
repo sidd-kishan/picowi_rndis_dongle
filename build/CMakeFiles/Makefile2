@@ -1604,6 +1604,7 @@ CMakeFiles/cherryusblib.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/blink.dir/all: CMakeFiles/picowi.dir/all
+CMakeFiles/blink.dir/all: CMakeFiles/cherryusblib.dir/all
 CMakeFiles/blink.dir/all: CMakeFiles/ELF2UF2Build.dir/all
 CMakeFiles/blink.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/depend
@@ -1613,7 +1614,7 @@ CMakeFiles/blink.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_def
 
 # Build rule for subdir invocation for target.
 CMakeFiles/blink.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/blink.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles 0
 .PHONY : CMakeFiles/blink.dir/rule
@@ -1658,6 +1659,7 @@ CMakeFiles/ELF2UF2Build.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/scan.dir/all: CMakeFiles/picowi.dir/all
+CMakeFiles/scan.dir/all: CMakeFiles/cherryusblib.dir/all
 CMakeFiles/scan.dir/all: CMakeFiles/ELF2UF2Build.dir/all
 CMakeFiles/scan.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scan.dir/build.make CMakeFiles/scan.dir/depend
@@ -1667,7 +1669,7 @@ CMakeFiles/scan.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_defa
 
 # Build rule for subdir invocation for target.
 CMakeFiles/scan.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/scan.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles 0
 .PHONY : CMakeFiles/scan.dir/rule
@@ -1686,6 +1688,7 @@ CMakeFiles/scan.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/join.dir/all: CMakeFiles/picowi.dir/all
+CMakeFiles/join.dir/all: CMakeFiles/cherryusblib.dir/all
 CMakeFiles/join.dir/all: CMakeFiles/ELF2UF2Build.dir/all
 CMakeFiles/join.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join.dir/build.make CMakeFiles/join.dir/depend
@@ -1695,7 +1698,7 @@ CMakeFiles/join.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_defa
 
 # Build rule for subdir invocation for target.
 CMakeFiles/join.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/join.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles 0
 .PHONY : CMakeFiles/join.dir/rule

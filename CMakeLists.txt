@@ -101,17 +101,17 @@ endif()
 
 # Create 'blink' executable
 add_executable(blink blink.c)
-target_link_libraries(blink picowi pico_stdlib hardware_pio hardware_dma)
+target_link_libraries(blink picowi pico_stdlib hardware_pio hardware_dma cherryusblib)
 pico_add_extra_outputs(blink)
 
 # Create 'scan' executable
 add_executable(scan scan.c)
-target_link_libraries(scan picowi pico_stdlib hardware_pio hardware_dma)
+target_link_libraries(scan picowi pico_stdlib hardware_pio hardware_dma cherryusblib)
 pico_add_extra_outputs(scan)
 
 # Create 'join' executable
 add_executable(join join.c)
-target_link_libraries(join picowi pico_stdlib hardware_pio hardware_dma)
+target_link_libraries(join picowi pico_stdlib hardware_pio hardware_dma cherryusblib)
 pico_add_extra_outputs(join)
 
 # Create 'ping' executable
