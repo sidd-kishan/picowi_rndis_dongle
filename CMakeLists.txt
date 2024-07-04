@@ -101,18 +101,23 @@ endif()
 
 # Create 'blink' executable
 add_executable(blink blink.c)
-target_link_libraries(blink picowi pico_stdlib hardware_pio hardware_dma cherryusblib)
+target_link_libraries(blink picowi pico_stdlib hardware_pio hardware_dma)
 pico_add_extra_outputs(blink)
 
 # Create 'scan' executable
 add_executable(scan scan.c)
-target_link_libraries(scan picowi pico_stdlib hardware_pio hardware_dma cherryusblib)
+target_link_libraries(scan picowi pico_stdlib hardware_pio hardware_dma)
 pico_add_extra_outputs(scan)
 
 # Create 'join' executable
 add_executable(join join.c)
-target_link_libraries(join picowi pico_stdlib hardware_pio hardware_dma cherryusblib)
+target_link_libraries(join picowi pico_stdlib hardware_pio hardware_dma)
 pico_add_extra_outputs(join)
+
+# Create 'join' executable
+add_executable(join_usb_rndis join_usb_rndis.c ${CMAKE_CURRENT_SOURCE_DIR}/src/cdc_rndis_device.c ${CMAKE_CURRENT_SOURCE_DIR}/src/lwip.c ${LWIP_DIR}/src/core/pbuf.c ${LWIP_DIR}/src/core/mem.c ${LWIP_DIR}/src/core/memp.c ${LWIP_DIR}/src/core/stats.c)
+target_link_libraries(join_usb_rndis picowi pico_stdlib hardware_pio hardware_dma cherryusblib)
+pico_add_extra_outputs(join_usb_rndis)
 
 # Create 'ping' executable
 add_executable(ping ping.c)

@@ -5,6 +5,7 @@
 /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/ELF2UF2Build.dir
 /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/scan.dir
 /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/join.dir
+/mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/join_usb_rndis.dir
 /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/ping.dir
 /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/dhcp.dir
 /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/dns.dir

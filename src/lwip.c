@@ -1,7 +1,6 @@
 #include "lwip.h"
 #include "usbd_core.h"
 #include "usbd_rndis.h"
-#include "pico/cyw43_arch.h"
 
 
 /* Macro Definition */
@@ -33,9 +32,10 @@ static void lwip_service_traffic(void)
 
     if (p != NULL) {
         /* entry point to the LwIP stack */
-        int eth_frame_send_success=cyw43_send_ethernet(&cyw43_state, CYW43_ITF_STA, p->tot_len, (void*)p, true);
+        //int eth_frame_send_success=cyw43_send_ethernet(&cyw43_state, CYW43_ITF_STA, p->tot_len, (void*)p, true);
 	    //err = netif_data.input(p, &netif_data);
 		pbuf_free(p);
-		p = (struct pbuf *) eth_frame_send_success;
+		//p = (struct pbuf *) eth_frame_send_success;
+		p = NULL;
     }
 }

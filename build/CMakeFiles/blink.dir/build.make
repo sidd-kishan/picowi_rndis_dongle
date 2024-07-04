@@ -834,7 +834,6 @@ blink.elf: CMakeFiles/blink.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/sr
 blink.elf: CMakeFiles/blink.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 blink.elf: CMakeFiles/blink.dir/build.make
 blink.elf: libpicowi.a
-blink.elf: libcherryusblib.a
 blink.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 blink.elf: CMakeFiles/blink.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Linking CXX executable blink.elf"

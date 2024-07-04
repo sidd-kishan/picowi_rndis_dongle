@@ -246,6 +246,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
   "CMakeFiles/scan.dir/DependInfo.cmake"
   "CMakeFiles/join.dir/DependInfo.cmake"
+  "CMakeFiles/join_usb_rndis.dir/DependInfo.cmake"
   "CMakeFiles/ping.dir/DependInfo.cmake"
   "CMakeFiles/dhcp.dir/DependInfo.cmake"
   "CMakeFiles/dns.dir/DependInfo.cmake"
