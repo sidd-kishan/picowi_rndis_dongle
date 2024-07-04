@@ -1264,9 +1264,9 @@ Discarded input sections
                 0x0000000000000000       0x1c libpicowi.a(picowi_dhcp.c.obj)
  .rodata.dhcp_cookie
                 0x0000000000000000        0x4 libpicowi.a(picowi_dhcp.c.obj)
- .text          0x0000000000000000        0x0 /tmp/cc1Setmx.o
- .data          0x0000000000000000        0x0 /tmp/cc1Setmx.o
- .bss           0x0000000000000000        0x0 /tmp/cc1Setmx.o
+ .text          0x0000000000000000        0x0 /tmp/ccVyCzIo.o
+ .data          0x0000000000000000        0x0 /tmp/ccVyCzIo.o
+ .bss           0x0000000000000000        0x0 /tmp/ccVyCzIo.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1485,7 +1485,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/cc1Setmx.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccVyCzIo.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2892,7 +2892,7 @@ LOAD CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-
 LOAD CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 LOAD CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 LOAD libpicowi.a
-LOAD /tmp/cc1Setmx.o
+LOAD /tmp/ccVyCzIo.o
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -3012,7 +3012,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000810       0x2c libpicowi.a(picowi_dhcp.c.obj)
  .ARM.attributes
-                0x000000000000083c       0x22 /tmp/cc1Setmx.o
+                0x000000000000083c       0x22 /tmp/ccVyCzIo.o
  .ARM.attributes
                 0x000000000000085e       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
