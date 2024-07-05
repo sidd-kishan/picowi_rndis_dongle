@@ -41,8 +41,8 @@
 #include "lib/picowi_web.h"
 
 // The hard-coded password is for test purposes only!!!
-#define SSID                "testnet"
-#define PASSWD              "testpass"
+#define SSID                "DESKTOP-MC1NR5H 0686"
+#define PASSWD              "vinodsinha123"
 #define EVENT_POLL_USEC     100000
 #define PING_RESP_USEC      200000
 #define PING_DATA_SIZE      32

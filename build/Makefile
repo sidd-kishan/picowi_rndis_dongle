@@ -286,6 +286,19 @@ web_server/fast:
 .PHONY : web_server/fast
 
 #=============================================================================
+# Target rules for targets named web_server_usb_rndis
+
+# Build rule for target.
+web_server_usb_rndis: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 web_server_usb_rndis
+.PHONY : web_server_usb_rndis
+
+# fast build rule for target.
+web_server_usb_rndis/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/build
+.PHONY : web_server_usb_rndis/fast
+
+#=============================================================================
 # Target rules for targets named web_cam
 
 # Build rule for target.
@@ -1017,6 +1030,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.obj: mnt/c/U
 # target to build an object file
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj
 
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.i: mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.i
@@ -1025,6 +1039,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.i: mnt/c/Use
 # target to preprocess a source file
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.i
 
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.s: mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.s
@@ -1033,6 +1048,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.s: mnt/c/Use
 # target to generate assembly for a file
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.s
 
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.obj: mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
@@ -1041,6 +1057,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.obj: mnt/c/
 # target to build an object file
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
 
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.i: mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.i
@@ -1049,6 +1066,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.i: mnt/c/Us
 # target to preprocess a source file
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.i
 
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.s: mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.s
@@ -1057,6 +1075,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.s: mnt/c/Us
 # target to generate assembly for a file
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.s
 
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.obj: mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
@@ -1065,6 +1084,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.obj: mnt/c/
 # target to build an object file
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
 
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.i: mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.i
@@ -1073,6 +1093,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.i: mnt/c/Us
 # target to preprocess a source file
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.i
 
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.s: mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.s
@@ -1081,6 +1102,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.s: mnt/c/Us
 # target to generate assembly for a file
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.s
 
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.obj: mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.obj
@@ -1089,6 +1111,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.obj: mnt/c
 # target to build an object file
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.obj
 
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.i: mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.i
@@ -1097,6 +1120,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.i: mnt/c/U
 # target to preprocess a source file
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.i
 
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.s: mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.s
@@ -1105,6 +1129,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.s: mnt/c/U
 # target to generate assembly for a file
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/stats.c.s
 
 mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.obj: mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.obj
@@ -1122,6 +1147,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_sect
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
@@ -1140,6 +1166,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_sect
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.i
 
@@ -1158,6 +1185,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_sect
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/critical_section.c.s
 
@@ -1176,6 +1204,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
@@ -1194,6 +1223,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.i
 
@@ -1212,6 +1242,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.s
 
@@ -1230,6 +1261,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.obj
 
@@ -1248,6 +1280,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.i
 
@@ -1266,6 +1299,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.s
 
@@ -1284,6 +1318,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.obj
 
@@ -1302,6 +1337,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.i
 
@@ -1320,6 +1356,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/sem.c.s
 
@@ -1338,6 +1375,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
 
@@ -1356,6 +1394,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.i
 
@@ -1374,6 +1413,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.s
 
@@ -1392,6 +1432,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helpe
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
@@ -1410,6 +1451,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helpe
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
@@ -1428,6 +1470,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helpe
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
@@ -1446,6 +1489,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.ob
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.obj
 
@@ -1464,6 +1508,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.i
 
@@ -1482,6 +1527,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/datetime.c.s
 
@@ -1500,6 +1546,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
 
@@ -1518,6 +1565,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.i
 
@@ -1536,6 +1584,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.s
 
@@ -1554,6 +1603,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.obj
 
@@ -1572,6 +1622,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.i
 
@@ -1590,6 +1641,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/queue.c.s
 
@@ -1608,6 +1660,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/clai
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
@@ -1626,6 +1679,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/clai
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
@@ -1644,6 +1698,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/clai
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
@@ -1662,6 +1717,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clo
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
@@ -1680,6 +1736,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clo
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
@@ -1698,6 +1755,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clo
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
@@ -1716,6 +1774,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_divider/di
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
@@ -1734,6 +1793,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 
@@ -1752,6 +1812,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 
@@ -1770,6 +1831,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 
@@ -1788,6 +1850,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
@@ -1806,6 +1869,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
@@ -1824,6 +1888,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
@@ -1866,6 +1931,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
@@ -1884,6 +1950,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
@@ -1902,6 +1969,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
@@ -1920,6 +1988,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq_ha
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
@@ -1938,6 +2007,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
@@ -1956,6 +2026,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 
@@ -1974,6 +2045,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
@@ -1992,6 +2064,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
@@ -2010,6 +2083,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
@@ -2028,6 +2102,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
@@ -2070,6 +2145,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
@@ -2088,6 +2164,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
@@ -2106,6 +2183,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
@@ -2124,6 +2202,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/time
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
@@ -2142,6 +2221,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/time
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
@@ -2160,6 +2240,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/time
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
@@ -2178,6 +2259,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
@@ -2196,6 +2278,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
@@ -2214,6 +2297,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
@@ -2232,6 +2316,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
@@ -2250,6 +2335,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
@@ -2268,6 +2354,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
@@ -2286,6 +2373,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/w
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
@@ -2304,6 +2392,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/w
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
@@ -2322,6 +2411,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/w
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
@@ -2340,6 +2430,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
@@ -2358,6 +2449,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
@@ -2376,6 +2468,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
@@ -2394,6 +2487,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bit_ops/bit_op
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
@@ -2412,6 +2506,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootro
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
@@ -2430,6 +2525,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootro
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
@@ -2448,6 +2544,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootro
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
@@ -2466,6 +2563,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_divider/divide
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
@@ -2484,6 +2582,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
@@ -2502,6 +2601,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
@@ -2520,6 +2620,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
@@ -2538,6 +2639,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
@@ -2556,6 +2658,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
@@ -2574,6 +2677,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
@@ -2592,6 +2696,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
@@ -2610,6 +2715,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
@@ -2628,6 +2734,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_ae
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
@@ -2646,6 +2753,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_in
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
@@ -2664,6 +2772,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_in
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
@@ -2682,6 +2791,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_in
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
@@ -2700,6 +2810,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_ma
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
@@ -2718,6 +2829,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_ma
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
@@ -2736,6 +2848,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_ma
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
@@ -2754,6 +2867,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_v1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
@@ -2772,6 +2886,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_int64_ops/pico
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
@@ -2790,6 +2905,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_ma
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
@@ -2808,6 +2924,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_ma
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
@@ -2826,6 +2943,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_ma
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
@@ -2844,6 +2962,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_mem_ops/mem_op
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
@@ -2862,6 +2981,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platf
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
@@ -2880,6 +3000,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platf
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
@@ -2898,6 +3019,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platf
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
@@ -2916,6 +3038,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
@@ -2934,6 +3057,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
@@ -2952,6 +3076,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
@@ -2970,6 +3095,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtim
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
@@ -2988,6 +3114,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtim
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
@@ -3006,6 +3133,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtim
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
@@ -3024,6 +3152,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
@@ -3042,6 +3171,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
@@ -3060,6 +3190,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
@@ -3078,6 +3209,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
@@ -3096,6 +3228,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
@@ -3114,6 +3247,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
@@ -3132,6 +3266,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
@@ -3150,6 +3285,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
@@ -3168,6 +3304,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
@@ -3186,6 +3323,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
@@ -3204,6 +3342,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/std
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
@@ -3222,6 +3361,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/std
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
@@ -3240,6 +3380,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/std
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
@@ -3258,6 +3399,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
@@ -3276,6 +3418,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
@@ -3294,6 +3437,7 @@ mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dns.dir/build.make CMakeFiles/dns.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp_socket_server.dir/build.make CMakeFiles/udp_socket_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_cam.dir/build.make CMakeFiles/web_cam.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
@@ -3351,6 +3495,7 @@ src/cdc_rndis_device.obj: src/cdc_rndis_device.c.obj
 # target to build an object file
 src/cdc_rndis_device.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/src/cdc_rndis_device.c.obj
 .PHONY : src/cdc_rndis_device.c.obj
 
 src/cdc_rndis_device.i: src/cdc_rndis_device.c.i
@@ -3359,6 +3504,7 @@ src/cdc_rndis_device.i: src/cdc_rndis_device.c.i
 # target to preprocess a source file
 src/cdc_rndis_device.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/src/cdc_rndis_device.c.i
 .PHONY : src/cdc_rndis_device.c.i
 
 src/cdc_rndis_device.s: src/cdc_rndis_device.c.s
@@ -3367,6 +3513,7 @@ src/cdc_rndis_device.s: src/cdc_rndis_device.c.s
 # target to generate assembly for a file
 src/cdc_rndis_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/src/cdc_rndis_device.c.s
 .PHONY : src/cdc_rndis_device.c.s
 
 src/lwip.obj: src/lwip.c.obj
@@ -3375,6 +3522,7 @@ src/lwip.obj: src/lwip.c.obj
 # target to build an object file
 src/lwip.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/src/lwip.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/src/lwip.c.obj
 .PHONY : src/lwip.c.obj
 
 src/lwip.i: src/lwip.c.i
@@ -3383,6 +3531,7 @@ src/lwip.i: src/lwip.c.i
 # target to preprocess a source file
 src/lwip.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/src/lwip.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/src/lwip.c.i
 .PHONY : src/lwip.c.i
 
 src/lwip.s: src/lwip.c.s
@@ -3391,6 +3540,7 @@ src/lwip.s: src/lwip.c.s
 # target to generate assembly for a file
 src/lwip.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/join_usb_rndis.dir/build.make CMakeFiles/join_usb_rndis.dir/src/lwip.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/src/lwip.c.s
 .PHONY : src/lwip.c.s
 
 udp_socket_server.obj: udp_socket_server.c.obj
@@ -3465,6 +3615,30 @@ web_server.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server.dir/build.make CMakeFiles/web_server.dir/web_server.c.s
 .PHONY : web_server.c.s
 
+web_server_usb_rndis.obj: web_server_usb_rndis.c.obj
+.PHONY : web_server_usb_rndis.obj
+
+# target to build an object file
+web_server_usb_rndis.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/web_server_usb_rndis.c.obj
+.PHONY : web_server_usb_rndis.c.obj
+
+web_server_usb_rndis.i: web_server_usb_rndis.c.i
+.PHONY : web_server_usb_rndis.i
+
+# target to preprocess a source file
+web_server_usb_rndis.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/web_server_usb_rndis.c.i
+.PHONY : web_server_usb_rndis.c.i
+
+web_server_usb_rndis.s: web_server_usb_rndis.c.s
+.PHONY : web_server_usb_rndis.s
+
+# target to generate assembly for a file
+web_server_usb_rndis.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_server_usb_rndis.dir/build.make CMakeFiles/web_server_usb_rndis.dir/web_server_usb_rndis.c.s
+.PHONY : web_server_usb_rndis.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3492,6 +3666,7 @@ help:
 	@echo "... udp_socket_server"
 	@echo "... web_cam"
 	@echo "... web_server"
+	@echo "... web_server_usb_rndis"
 	@echo "... blink.obj"
 	@echo "... blink.i"
 	@echo "... blink.s"
@@ -3731,6 +3906,9 @@ help:
 	@echo "... web_server.obj"
 	@echo "... web_server.i"
 	@echo "... web_server.s"
+	@echo "... web_server_usb_rndis.obj"
+	@echo "... web_server_usb_rndis.i"
+	@echo "... web_server_usb_rndis.s"
 .PHONY : help
 
 

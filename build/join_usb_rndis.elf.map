@@ -1243,9 +1243,9 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 libcherryusblib.a(usbd_cdc.c.obj)
  .data          0x0000000000000000        0x0 libcherryusblib.a(usbd_rndis.c.obj)
  .data          0x0000000000000000        0x0 libcherryusblib.a(usbd_core.c.obj)
- .text          0x0000000000000000        0x0 /tmp/ccTuArTS.o
- .data          0x0000000000000000        0x0 /tmp/ccTuArTS.o
- .bss           0x0000000000000000        0x0 /tmp/ccTuArTS.o
+ .text          0x0000000000000000        0x0 /tmp/cc5puHKU.o
+ .data          0x0000000000000000        0x0 /tmp/cc5puHKU.o
+ .bss           0x0000000000000000        0x0 /tmp/cc5puHKU.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1509,11 +1509,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccTuArTS.o
+ .boot2         0x0000000010000000      0x100 /tmp/cc5puHKU.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x9698
+.text           0x0000000010000100     0x9690
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1574,582 +1574,582 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x00000000100002bc       0x98 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .text.simple_eth_event_handler
-                0x0000000010000354       0x70 CMakeFiles/join_usb_rndis.dir/join_usb_rndis.c.obj
+                0x0000000010000354       0x64 CMakeFiles/join_usb_rndis.dir/join_usb_rndis.c.obj
                 0x0000000010000354                simple_eth_event_handler
  .text.startup.main
-                0x00000000100003c4      0x158 CMakeFiles/join_usb_rndis.dir/join_usb_rndis.c.obj
-                0x00000000100003c4                main
+                0x00000000100003b8      0x15c CMakeFiles/join_usb_rndis.dir/join_usb_rndis.c.obj
+                0x00000000100003b8                main
  .text.usbd_cdc_acm_bulk_out
-                0x000000001000051c       0xfc CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
-                0x000000001000051c                usbd_cdc_acm_bulk_out
+                0x0000000010000514       0xfc CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
+                0x0000000010000514                usbd_cdc_acm_bulk_out
  .text.usbd_event_handler
-                0x0000000010000618       0x40 CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
-                0x0000000010000618                usbd_event_handler
+                0x0000000010000610       0x40 CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
+                0x0000000010000610                usbd_event_handler
  .text.usbd_cdc_acm_bulk_in
-                0x0000000010000658       0x24 CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
-                0x0000000010000658                usbd_cdc_acm_bulk_in
+                0x0000000010000650       0x24 CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
+                0x0000000010000650                usbd_cdc_acm_bulk_in
  .text.usbd_rndis_data_recv_done
-                0x000000001000067c        0x4 CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
-                0x000000001000067c                usbd_rndis_data_recv_done
+                0x0000000010000674        0x4 CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
+                0x0000000010000674                usbd_rndis_data_recv_done
  .text.cdc_rndis_init
-                0x0000000010000680      0x11c CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
-                0x0000000010000680                cdc_rndis_init
+                0x0000000010000678      0x11c CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
+                0x0000000010000678                cdc_rndis_init
  .text.usbd_cdc_acm_set_dtr
-                0x000000001000079c       0x14 CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
-                0x000000001000079c                usbd_cdc_acm_set_dtr
+                0x0000000010000794       0x14 CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
+                0x0000000010000794                usbd_cdc_acm_set_dtr
  .text.pbuf_free.part.0
-                0x00000000100007b0       0xb0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+                0x00000000100007a8       0xb0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
  .text.pbuf_alloc
-                0x0000000010000860      0x124 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
-                0x0000000010000860                pbuf_alloc
+                0x0000000010000858      0x124 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+                0x0000000010000858                pbuf_alloc
  .text.pbuf_free
-                0x0000000010000984       0x1c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
-                0x0000000010000984                pbuf_free
+                0x000000001000097c       0x1c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+                0x000000001000097c                pbuf_free
  .text.pbuf_take
-                0x00000000100009a0       0x80 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
-                0x00000000100009a0                pbuf_take
+                0x0000000010000998       0x80 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+                0x0000000010000998                pbuf_take
  .text.mem_free
-                0x0000000010000a20      0x15c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj
-                0x0000000010000a20                mem_free
+                0x0000000010000a18      0x15c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj
+                0x0000000010000a18                mem_free
  .text.mem_malloc
-                0x0000000010000b7c      0x19c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj
-                0x0000000010000b7c                mem_malloc
+                0x0000000010000b74      0x19c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj
+                0x0000000010000b74                mem_malloc
  .text.memp_malloc
-                0x0000000010000d18       0x50 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
-                0x0000000010000d18                memp_malloc
+                0x0000000010000d10       0x50 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
+                0x0000000010000d10                memp_malloc
  .text.memp_free
-                0x0000000010000d68       0x38 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
-                0x0000000010000d68                memp_free
+                0x0000000010000d60       0x38 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
+                0x0000000010000d60                memp_free
  .text.set_sys_clock_pll
-                0x0000000010000da0       0x78 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
-                0x0000000010000da0                set_sys_clock_pll
+                0x0000000010000d98       0x78 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+                0x0000000010000d98                set_sys_clock_pll
  .text.check_sys_clock_khz
-                0x0000000010000e18      0x17c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
-                0x0000000010000e18                check_sys_clock_khz
+                0x0000000010000e10      0x17c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+                0x0000000010000e10                check_sys_clock_khz
  .text.gpio_set_function
-                0x0000000010000f94       0x30 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000f94                gpio_set_function
+                0x0000000010000f8c       0x30 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000f8c                gpio_set_function
  .text.gpio_set_pulls
-                0x0000000010000fc4       0x30 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000fc4                gpio_set_pulls
+                0x0000000010000fbc       0x30 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000fbc                gpio_set_pulls
  .text.gpio_set_input_hysteresis_enabled
-                0x0000000010000ff4       0x28 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000ff4                gpio_set_input_hysteresis_enabled
+                0x0000000010000fec       0x28 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000fec                gpio_set_input_hysteresis_enabled
  .text.gpio_init
-                0x000000001000101c       0x3c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x000000001000101c                gpio_init
+                0x0000000010001014       0x3c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010001014                gpio_init
  .text.running_on_fpga
-                0x0000000010001058       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x0000000010001058                running_on_fpga
+                0x0000000010001050       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x0000000010001050                running_on_fpga
  .text.hw_claim_lock
-                0x0000000010001068       0x18 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010001068                hw_claim_lock
+                0x0000000010001060       0x18 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010001060                hw_claim_lock
  .text.hw_claim_unlock
-                0x0000000010001080       0x14 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010001080                hw_claim_unlock
+                0x0000000010001078       0x14 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010001078                hw_claim_unlock
  .text.hw_claim_or_assert
-                0x0000000010001094       0x44 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010001094                hw_claim_or_assert
+                0x000000001000108c       0x44 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x000000001000108c                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x00000000100010d8       0x9c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x00000000100010d8                hw_claim_unused_from_range
+                0x00000000100010d0       0x9c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100010d0                hw_claim_unused_from_range
  .text.spin_locks_reset
-                0x0000000010001174       0x1c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010001174                spin_locks_reset
+                0x000000001000116c       0x1c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x000000001000116c                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x0000000010001190       0x18 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010001190                next_striped_spin_lock_num
+                0x0000000010001188       0x18 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010001188                next_striped_spin_lock_num
  .text.irq_set_enabled
-                0x00000000100011a8       0x24 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100011a8                irq_set_enabled
+                0x00000000100011a0       0x24 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100011a0                irq_set_enabled
  .text.irq_get_vtable_handler
-                0x00000000100011cc       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100011cc                irq_get_vtable_handler
+                0x00000000100011c4       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100011c4                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x00000000100011dc       0x54 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100011dc                irq_set_exclusive_handler
+                0x00000000100011d4       0x54 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100011d4                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x0000000010001230      0x1b0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001230                irq_remove_handler
+                0x0000000010001228      0x1b0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001228                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x00000000100013e0       0xb4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100013e0                irq_add_tail_to_free_list
+                0x00000000100013d8       0xb4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100013d8                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000010001494       0x24 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001494                irq_init_priorities
+                0x000000001000148c       0x24 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000148c                irq_init_priorities
  .text.lock_init
-                0x00000000100014b8       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x00000000100014b8                lock_init
+                0x00000000100014b0       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x00000000100014b0                lock_init
  .text.mutex_init
-                0x00000000100014c8       0x1c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x00000000100014c8                mutex_init
+                0x00000000100014c0       0x1c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x00000000100014c0                mutex_init
  .text.recursive_mutex_init
-                0x00000000100014e4       0x1c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x00000000100014e4                recursive_mutex_init
+                0x00000000100014dc       0x1c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x00000000100014dc                recursive_mutex_init
  .text.timer_pool_entry_comparator
-                0x0000000010001500       0x34 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001500                timer_pool_entry_comparator
+                0x00000000100014f8       0x34 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100014f8                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x0000000010001534       0x30 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000152c       0x30 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x0000000010001564      0x100 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000155c      0x100 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000010001664      0x1bc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000165c      0x1bc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000010001820       0x6c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001820                alarm_pool_init_default
+                0x0000000010001818       0x6c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001818                alarm_pool_init_default
  .text.alarm_pool_add_alarm_at
-                0x000000001000188c      0x178 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
-                0x000000001000188c                alarm_pool_add_alarm_at
+                0x0000000010001884      0x178 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001884                alarm_pool_add_alarm_at
  .text.best_effort_wfe_or_timeout
-                0x0000000010001a04       0xd4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001a04                best_effort_wfe_or_timeout
+                0x00000000100019fc       0xd4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100019fc                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x0000000010001ad8       0xbc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001ad0       0xbc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x0000000010001b94       0x18 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001b94                hardware_alarm_claim
+                0x0000000010001b8c       0x18 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001b8c                hardware_alarm_claim
  .text.time_us_64
-                0x0000000010001bac       0x14 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001bac                time_us_64
+                0x0000000010001ba4       0x14 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001ba4                time_us_64
  .text.busy_wait_us
-                0x0000000010001bc0       0x54 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001bc0                busy_wait_us
+                0x0000000010001bb8       0x54 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001bb8                busy_wait_us
  .text.hardware_alarm_set_callback
-                0x0000000010001c14       0x8c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001c14                hardware_alarm_set_callback
+                0x0000000010001c0c       0x8c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001c0c                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000010001ca0       0xd4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001ca0                hardware_alarm_set_target
+                0x0000000010001c98       0xd4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001c98                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x0000000010001d74       0x3c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001d74                hardware_alarm_cancel
+                0x0000000010001d6c       0x3c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001d6c                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x0000000010001db0       0x68 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001da8       0x68 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x0000000010001e18       0x3c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001e18                ph_post_alloc_init
+                0x0000000010001e10       0x3c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001e10                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010001e54       0x90 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001e54                ph_merge_two_pass
+                0x0000000010001e4c       0x90 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001e4c                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x0000000010001ee4      0x100 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001edc      0x100 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x0000000010001fe4      0x104 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001fe4                ph_remove_head
+                0x0000000010001fdc      0x104 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001fdc                ph_remove_head
  .text.ph_remove_and_free_node
-                0x00000000100020e8       0x7c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100020e8                ph_remove_and_free_node
+                0x00000000100020e0       0x7c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100020e0                ph_remove_and_free_node
  .text.uart_init
-                0x0000000010002164      0x188 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x0000000010002164                uart_init
+                0x000000001000215c      0x188 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x000000001000215c                uart_init
  .text.clock_configure
-                0x00000000100022ec      0x118 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000100022ec                clock_configure
+                0x00000000100022e4      0x118 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000100022e4                clock_configure
  .text.clocks_init
-                0x0000000010002404      0x2d0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010002404                clocks_init
+                0x00000000100023fc      0x2d0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000100023fc                clocks_init
  .text.clock_get_hz
-                0x00000000100026d4        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000100026d4                clock_get_hz
+                0x00000000100026cc        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000100026cc                clock_get_hz
  .text.pll_init
-                0x00000000100026e0       0xa0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x00000000100026e0                pll_init
+                0x00000000100026d8       0xa0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x00000000100026d8                pll_init
  .text.watchdog_start_tick
-                0x0000000010002780       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010002780                watchdog_start_tick
+                0x0000000010002778       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010002778                watchdog_start_tick
  .text.xosc_init
-                0x0000000010002790       0x28 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x0000000010002790                xosc_init
+                0x0000000010002788       0x28 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000010002788                xosc_init
  .text.runtime_init
-                0x00000000100027b8       0xf0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100027b8                runtime_init
- .text._exit    0x00000000100028a8        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100028a8                _exit
- .text.exit     0x00000000100028ac        0x8 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100028ac                exit
- .text.panic    0x00000000100028b4       0x30 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100028b4                panic
+                0x00000000100027b0       0xf0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100027b0                runtime_init
+ .text._exit    0x00000000100028a0        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100028a0                _exit
+ .text.exit     0x00000000100028a4        0x8 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100028a4                exit
+ .text.panic    0x00000000100028ac       0x30 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100028ac                panic
  .text.hard_assertion_failure
-                0x00000000100028e4        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100028e4                hard_assertion_failure
+                0x00000000100028dc        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100028dc                hard_assertion_failure
  .text._out_buffer
-                0x00000000100028f0        0x8 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100028e8        0x8 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_null
-                0x00000000100028f8        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100028f0        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x00000000100028fc       0x9c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100028f4       0x9c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x0000000010002998      0x1cc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002990      0x1cc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x0000000010002b64       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002b5c       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x0000000010002b74       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x0000000010002b84      0x44c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x0000000010002fd0      0x398 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002b6c       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x0000000010002b7c      0x44c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x0000000010002fc8      0x398 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x0000000010003368      0xb04 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003360      0xb04 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.__wrap_sprintf
-                0x0000000010003e6c       0x28 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010003e6c                __wrap_sprintf
+                0x0000000010003e64       0x28 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003e64                __wrap_sprintf
  .text.vfctprintf
-                0x0000000010003e94       0x20 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010003e94                vfctprintf
+                0x0000000010003e8c       0x20 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003e8c                vfctprintf
  .text.weak_raw_vprintf
-                0x0000000010003eb4       0x30 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010003eb4                weak_raw_vprintf
- .text          0x0000000010003ee4       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000010003eac       0x30 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003eac                weak_raw_vprintf
+ .text          0x0000000010003edc       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x0000000010003ef4       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003ef4                rom_func_lookup
+                0x0000000010003eec       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003eec                rom_func_lookup
  .text.rom_data_lookup
-                0x0000000010003f04       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003f04                rom_data_lookup
+                0x0000000010003efc       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003efc                rom_data_lookup
  .text.rom_funcs_lookup
-                0x0000000010003f14       0x44 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003f14                rom_funcs_lookup
+                0x0000000010003f0c       0x44 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003f0c                rom_funcs_lookup
  .text.__wrap___aeabi_idiv
-                0x0000000010003f58       0x50 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003f58                __wrap___aeabi_idivmod
-                0x0000000010003f58                divmod_s32s32
-                0x0000000010003f58                div_s32s32
-                0x0000000010003f58                __wrap___aeabi_idiv
-                0x0000000010003f60                divmod_s32s32_unsafe
-                0x0000000010003f8c                divmod_s32s32_savestate
+                0x0000000010003f50       0x50 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010003f50                __wrap___aeabi_idivmod
+                0x0000000010003f50                divmod_s32s32
+                0x0000000010003f50                div_s32s32
+                0x0000000010003f50                __wrap___aeabi_idiv
+                0x0000000010003f58                divmod_s32s32_unsafe
+                0x0000000010003f84                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x0000000010003fa8       0x4c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003fa8                __wrap___aeabi_uidiv
-                0x0000000010003fa8                __wrap___aeabi_uidivmod
-                0x0000000010003fa8                div_u32u32
-                0x0000000010003fa8                divmod_u32u32
-                0x0000000010003fb0                divmod_u32u32_unsafe
-                0x0000000010003fd8                divmod_u32u32_savestate
+                0x0000000010003fa0       0x4c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010003fa0                __wrap___aeabi_uidiv
+                0x0000000010003fa0                __wrap___aeabi_uidivmod
+                0x0000000010003fa0                div_u32u32
+                0x0000000010003fa0                divmod_u32u32
+                0x0000000010003fa8                divmod_u32u32_unsafe
+                0x0000000010003fd0                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x0000000010003ff4      0x424 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003ff4                div_s64s64
-                0x0000000010003ff4                divmod_s64s64
-                0x0000000010003ff4                __wrap___aeabi_ldivmod
-                0x0000000010004024                div_u64u64
-                0x0000000010004024                divmod_u64u64
-                0x0000000010004024                __wrap___aeabi_uldivmod
-                0x0000000010004034                divmod_u64u64_savestate
-                0x0000000010004054                divmod_s64s64_unsafe
-                0x00000000100040dc                divmod_u64u64_unsafe
+                0x0000000010003fec      0x424 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010003fec                div_s64s64
+                0x0000000010003fec                divmod_s64s64
+                0x0000000010003fec                __wrap___aeabi_ldivmod
+                0x000000001000401c                div_u64u64
+                0x000000001000401c                divmod_u64u64
+                0x000000001000401c                __wrap___aeabi_uldivmod
+                0x000000001000402c                divmod_u64u64_savestate
+                0x000000001000404c                divmod_s64s64_unsafe
+                0x00000000100040d4                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x0000000010004418       0x80 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004418                __wrap___aeabi_drsub
-                0x000000001000441e                __wrap___aeabi_dsub
-                0x0000000010004430                __wrap___aeabi_dadd
-                0x0000000010004442                __wrap___aeabi_ddiv
-                0x000000001000447e                __wrap___aeabi_dmul
+                0x0000000010004410       0x80 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004410                __wrap___aeabi_drsub
+                0x0000000010004416                __wrap___aeabi_dsub
+                0x0000000010004428                __wrap___aeabi_dadd
+                0x000000001000443a                __wrap___aeabi_ddiv
+                0x0000000010004476                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x0000000010004498       0x6c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004498                __wrap___aeabi_cdrcmple
-                0x00000000100044a8                __wrap___aeabi_cdcmple
-                0x00000000100044a8                __wrap___aeabi_cdcmpeq
+                0x0000000010004490       0x6c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004490                __wrap___aeabi_cdrcmple
+                0x00000000100044a0                __wrap___aeabi_cdcmple
+                0x00000000100044a0                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x0000000010004504        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004504                __wrap___aeabi_dcmplt
+                0x00000000100044fc        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100044fc                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x0000000010004510       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004510                __wrap___aeabi_dcmple
+                0x0000000010004508       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004508                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x0000000010004520       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004520                __wrap___aeabi_dcmpge
+                0x0000000010004518       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004518                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x0000000010004530        0xa CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004530                __wrap___aeabi_dcmpgt
+                0x0000000010004528        0xa CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004528                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x000000001000453a       0x1c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x000000001000453a                __wrap___aeabi_dcmpun
- *fill*         0x0000000010004556        0x2 
+                0x0000000010004532       0x1c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004532                __wrap___aeabi_dcmpun
+ *fill*         0x000000001000454e        0x2 
  .text.__wrap___aeabi_i2d
-                0x0000000010004558       0x38 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004558                __wrap___aeabi_ui2d
-                0x0000000010004560                __wrap___aeabi_i2d
+                0x0000000010004550       0x38 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004550                __wrap___aeabi_ui2d
+                0x0000000010004558                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x0000000010004590       0x48 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004590                __wrap___aeabi_d2iz
-                0x0000000010004590                double2int_z
+                0x0000000010004588       0x48 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004588                __wrap___aeabi_d2iz
+                0x0000000010004588                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x00000000100045d8       0x18 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x00000000100045d8                double2uint
-                0x00000000100045d8                __wrap___aeabi_d2uiz
+                0x00000000100045d0       0x18 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100045d0                double2uint
+                0x00000000100045d0                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x00000000100045f0       0x94 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x00000000100045f0                __aeabi_double_init
+                0x00000000100045e8       0x94 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x00000000100045e8                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000010004684       0x2c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004684                double_table_shim_on_use_helper
+                0x000000001000467c       0x2c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x000000001000467c                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x00000000100046b0       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100046b0                drsub_shim
-                0x00000000100046b6                dsub_shim
+                0x00000000100046a8       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100046a8                drsub_shim
+                0x00000000100046ae                dsub_shim
  .text.dadd_shim
-                0x00000000100046c0      0x15c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100046c0                dadd_shim
+                0x00000000100046b8      0x15c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100046b8                dadd_shim
  .text.dmul_shim
-                0x000000001000481c      0x15c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x000000001000481c                dmul_shim
+                0x0000000010004814      0x15c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004814                dmul_shim
  .text.ddiv_shim
-                0x0000000010004978      0x1b0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004978                ddiv_shim
+                0x0000000010004970      0x1b0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004970                ddiv_shim
  .text.double2uint_shim
-                0x0000000010004b28        0xe CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004b28                double2uint_shim
-                0x0000000010004b2a                double2ufix_shim
- *fill*         0x0000000010004b36        0x2 
+                0x0000000010004b20        0xe CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004b20                double2uint_shim
+                0x0000000010004b22                double2ufix_shim
+ *fill*         0x0000000010004b2e        0x2 
  .text.double2uint64_shim
-                0x0000000010004b38       0x70 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004b38                double2uint64_shim
-                0x0000000010004b3a                double2ufix64_shim
-                0x0000000010004b5a                d2fix_a
+                0x0000000010004b30       0x70 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004b30                double2uint64_shim
+                0x0000000010004b32                double2ufix64_shim
+                0x0000000010004b52                d2fix_a
  .text.dunpacks
-                0x0000000010004ba8       0x3c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004ba8                dunpacks
+                0x0000000010004ba0       0x3c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004ba0                dunpacks
  .text.__aeabi_float_init
-                0x0000000010004be4       0x64 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000010004be4                __aeabi_float_init
+                0x0000000010004bdc       0x64 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000010004bdc                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x0000000010004c48       0x2c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x0000000010004c48                float_table_shim_on_use_helper
- .text          0x0000000010004c74       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010004c74                __aeabi_mem_init
- .text.memset   0x0000000010004c84        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010004c84                __wrap_memset
- .text.memcpy   0x0000000010004c90        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010004c90                __wrap___aeabi_memcpy
-                0x0000000010004c90                __wrap_memcpy
+                0x0000000010004c40       0x2c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x0000000010004c40                float_table_shim_on_use_helper
+ .text          0x0000000010004c6c       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010004c6c                __aeabi_mem_init
+ .text.memset   0x0000000010004c7c        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010004c7c                __wrap_memset
+ .text.memcpy   0x0000000010004c88        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010004c88                __wrap___aeabi_memcpy
+                0x0000000010004c88                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x0000000010004c9c       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004c94       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x0000000010004cac       0xb4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004ca4       0xb4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x0000000010004d60       0x64 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004d58       0x64 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string.isra.0
-                0x0000000010004dc4       0xfc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004dbc       0xfc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010004ec0       0x98 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004ec0                __wrap_putchar
+                0x0000000010004eb8       0x98 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004eb8                __wrap_putchar
  .text.__wrap_puts
-                0x0000000010004f58       0x3c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004f58                __wrap_puts
+                0x0000000010004f50       0x3c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004f50                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x0000000010004f94       0x30 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004f94                stdio_set_driver_enabled
+                0x0000000010004f8c       0x30 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004f8c                stdio_set_driver_enabled
  .text.__wrap_vprintf
-                0x0000000010004fc4       0xd8 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004fc4                __wrap_vprintf
+                0x0000000010004fbc       0xd8 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004fbc                __wrap_vprintf
  .text.__wrap_printf
-                0x000000001000509c       0x18 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x000000001000509c                __wrap_printf
+                0x0000000010005094       0x18 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010005094                __wrap_printf
  .text.stdio_init_all
-                0x00000000100050b4        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100050b4                stdio_init_all
+                0x00000000100050ac        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100050ac                stdio_init_all
  .text.stdio_uart_out_chars
-                0x00000000100050c0       0x4c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100050b8       0x4c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_in_chars
-                0x000000001000510c       0x84 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x000000001000510c                stdio_uart_in_chars
+                0x0000000010005104       0x84 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010005104                stdio_uart_in_chars
  .text.on_uart_rx
-                0x0000000010005190       0x28 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010005188       0x28 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_set_chars_available_callback
-                0x00000000100051b8       0x8c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100051b0       0x8c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_init
-                0x0000000010005244       0x48 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010005244                stdio_uart_init
+                0x000000001000523c       0x48 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000523c                stdio_uart_init
  .text.pio_claim_unused_sm
-                0x000000001000528c       0x3c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x000000001000528c                pio_claim_unused_sm
+                0x0000000010005284       0x3c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x0000000010005284                pio_claim_unused_sm
  .text.pio_add_program
-                0x00000000100052c8       0xc8 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x00000000100052c8                pio_add_program
+                0x00000000100052c0       0xc8 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x00000000100052c0                pio_add_program
  .text.pio_sm_set_consecutive_pindirs
-                0x0000000010005390       0xb0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x0000000010005390                pio_sm_set_consecutive_pindirs
+                0x0000000010005388       0xb0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x0000000010005388                pio_sm_set_consecutive_pindirs
  .text.pio_sm_init
-                0x0000000010005440       0x8c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x0000000010005440                pio_sm_init
+                0x0000000010005438       0x8c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x0000000010005438                pio_sm_init
  .text.dma_claim_unused_channel
-                0x00000000100054cc       0x20 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
-                0x00000000100054cc                dma_claim_unused_channel
- .text.io_init  0x00000000100054ec       0x10 libpicowi.a(picowi_pico.c.obj)
-                0x00000000100054ec                io_init
- .text.io_set   0x00000000100054fc       0x4c libpicowi.a(picowi_pico.c.obj)
-                0x00000000100054fc                io_set
- .text.io_out   0x0000000010005548       0x14 libpicowi.a(picowi_pico.c.obj)
-                0x0000000010005548                io_out
- .text.io_in    0x000000001000555c       0x10 libpicowi.a(picowi_pico.c.obj)
-                0x000000001000555c                io_in
- .text.usdelay  0x000000001000556c       0x18 libpicowi.a(picowi_pico.c.obj)
-                0x000000001000556c                usdelay
+                0x00000000100054c4       0x20 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+                0x00000000100054c4                dma_claim_unused_channel
+ .text.io_init  0x00000000100054e4       0x10 libpicowi.a(picowi_pico.c.obj)
+                0x00000000100054e4                io_init
+ .text.io_set   0x00000000100054f4       0x4c libpicowi.a(picowi_pico.c.obj)
+                0x00000000100054f4                io_set
+ .text.io_out   0x0000000010005540       0x14 libpicowi.a(picowi_pico.c.obj)
+                0x0000000010005540                io_out
+ .text.io_in    0x0000000010005554       0x10 libpicowi.a(picowi_pico.c.obj)
+                0x0000000010005554                io_in
+ .text.usdelay  0x0000000010005564       0x18 libpicowi.a(picowi_pico.c.obj)
+                0x0000000010005564                usdelay
  .text.ustimeout
-                0x0000000010005584       0x24 libpicowi.a(picowi_pico.c.obj)
-                0x0000000010005584                ustimeout
+                0x000000001000557c       0x24 libpicowi.a(picowi_pico.c.obj)
+                0x000000001000557c                ustimeout
  .text.wifi_core_reset
-                0x00000000100055a8      0x110 libpicowi.a(picowi_init.c.obj)
-                0x00000000100055a8                wifi_core_reset
+                0x00000000100055a0      0x110 libpicowi.a(picowi_init.c.obj)
+                0x00000000100055a0                wifi_core_reset
  .text.wifi_data_load
-                0x00000000100056b8       0xac libpicowi.a(picowi_init.c.obj)
-                0x00000000100056b8                wifi_data_load
+                0x00000000100056b0       0xac libpicowi.a(picowi_init.c.obj)
+                0x00000000100056b0                wifi_data_load
  .text.wifi_reg_val_wait
-                0x0000000010005764       0x48 libpicowi.a(picowi_init.c.obj)
-                0x0000000010005764                wifi_reg_val_wait
+                0x000000001000575c       0x48 libpicowi.a(picowi_init.c.obj)
+                0x000000001000575c                wifi_reg_val_wait
  .text.wifi_set_led
-                0x00000000100057ac       0x80 libpicowi.a(picowi_init.c.obj)
-                0x00000000100057ac                wifi_set_led
+                0x00000000100057a4       0x80 libpicowi.a(picowi_init.c.obj)
+                0x00000000100057a4                wifi_set_led
  .text.disp_bytes
-                0x000000001000582c       0x30 libpicowi.a(picowi_init.c.obj)
-                0x000000001000582c                disp_bytes
- .text.display  0x000000001000585c       0x28 libpicowi.a(picowi_init.c.obj)
-                0x000000001000585c                display
+                0x0000000010005824       0x30 libpicowi.a(picowi_init.c.obj)
+                0x0000000010005824                disp_bytes
+ .text.display  0x0000000010005854       0x28 libpicowi.a(picowi_init.c.obj)
+                0x0000000010005854                display
  .text.wifi_init
-                0x0000000010005884      0x254 libpicowi.a(picowi_init.c.obj)
-                0x0000000010005884                wifi_init
+                0x000000001000587c      0x254 libpicowi.a(picowi_init.c.obj)
+                0x000000001000587c                wifi_init
  .text.set_display_mode
-                0x0000000010005ad8        0xc libpicowi.a(picowi_init.c.obj)
-                0x0000000010005ad8                set_display_mode
+                0x0000000010005ad0        0xc libpicowi.a(picowi_init.c.obj)
+                0x0000000010005ad0                set_display_mode
  .text.wifi_spi_write
-                0x0000000010005ae4       0xc4 libpicowi.a(picowi_wifi.c.obj)
-                0x0000000010005ae4                wifi_spi_write
+                0x0000000010005adc       0xc4 libpicowi.a(picowi_wifi.c.obj)
+                0x0000000010005adc                wifi_spi_write
  .text.wifi_data_read
-                0x0000000010005ba8      0x188 libpicowi.a(picowi_wifi.c.obj)
-                0x0000000010005ba8                wifi_data_read
+                0x0000000010005ba0      0x188 libpicowi.a(picowi_wifi.c.obj)
+                0x0000000010005ba0                wifi_data_read
  .text.wifi_reg_read
-                0x0000000010005d30       0x90 libpicowi.a(picowi_wifi.c.obj)
-                0x0000000010005d30                wifi_reg_read
+                0x0000000010005d28       0x90 libpicowi.a(picowi_wifi.c.obj)
+                0x0000000010005d28                wifi_reg_read
  .text.wifi_data_write
-                0x0000000010005dc0       0xb0 libpicowi.a(picowi_wifi.c.obj)
-                0x0000000010005dc0                wifi_data_write
+                0x0000000010005db8       0xb0 libpicowi.a(picowi_wifi.c.obj)
+                0x0000000010005db8                wifi_data_write
  .text.wifi_reg_write
-                0x0000000010005e70       0x90 libpicowi.a(picowi_wifi.c.obj)
-                0x0000000010005e70                wifi_reg_write
+                0x0000000010005e68       0x90 libpicowi.a(picowi_wifi.c.obj)
+                0x0000000010005e68                wifi_reg_write
  .text.wifi_rx_event_wait
-                0x0000000010005f00       0x60 libpicowi.a(picowi_wifi.c.obj)
-                0x0000000010005f00                wifi_rx_event_wait
+                0x0000000010005ef8       0x60 libpicowi.a(picowi_wifi.c.obj)
+                0x0000000010005ef8                wifi_rx_event_wait
  .text.wifi_pio_dma_init
-                0x0000000010005f60       0xb8 libpicowi.a(picowi_wifi.c.obj)
-                0x0000000010005f60                wifi_pio_dma_init
+                0x0000000010005f58       0xb8 libpicowi.a(picowi_wifi.c.obj)
+                0x0000000010005f58                wifi_pio_dma_init
  .text.wifi_pio_init
-                0x0000000010006018      0x110 libpicowi.a(picowi_wifi.c.obj)
-                0x0000000010006018                wifi_pio_init
+                0x0000000010006010      0x110 libpicowi.a(picowi_wifi.c.obj)
+                0x0000000010006010                wifi_pio_init
  .text.wifi_start
-                0x0000000010006128      0x1c4 libpicowi.a(picowi_wifi.c.obj)
-                0x0000000010006128                wifi_start
+                0x0000000010006120      0x1c4 libpicowi.a(picowi_wifi.c.obj)
+                0x0000000010006120                wifi_start
  .text.wifi_setup
-                0x00000000100062ec       0x80 libpicowi.a(picowi_wifi.c.obj)
-                0x00000000100062ec                wifi_setup
+                0x00000000100062e4       0x80 libpicowi.a(picowi_wifi.c.obj)
+                0x00000000100062e4                wifi_setup
  .text.wifi_get_irq
-                0x000000001000636c       0x10 libpicowi.a(picowi_wifi.c.obj)
-                0x000000001000636c                wifi_get_irq
+                0x0000000010006364       0x10 libpicowi.a(picowi_wifi.c.obj)
+                0x0000000010006364                wifi_get_irq
  .text.ioctl_cmd
-                0x000000001000637c      0x2bc libpicowi.a(picowi_ioctl.c.obj)
-                0x000000001000637c                ioctl_cmd
+                0x0000000010006374      0x2bc libpicowi.a(picowi_ioctl.c.obj)
+                0x0000000010006374                ioctl_cmd
  .text.ioctl_set_uint32
-                0x0000000010006638       0x2c libpicowi.a(picowi_ioctl.c.obj)
-                0x0000000010006638                ioctl_set_uint32
+                0x0000000010006630       0x2c libpicowi.a(picowi_ioctl.c.obj)
+                0x0000000010006630                ioctl_set_uint32
  .text.ioctl_set_data2
-                0x0000000010006664       0x24 libpicowi.a(picowi_ioctl.c.obj)
-                0x0000000010006664                ioctl_set_data2
+                0x000000001000665c       0x24 libpicowi.a(picowi_ioctl.c.obj)
+                0x000000001000665c                ioctl_set_data2
  .text.ioctl_get_data
-                0x0000000010006688       0x2c libpicowi.a(picowi_ioctl.c.obj)
-                0x0000000010006688                ioctl_get_data
+                0x0000000010006680       0x2c libpicowi.a(picowi_ioctl.c.obj)
+                0x0000000010006680                ioctl_get_data
  .text.ioctl_set_data
-                0x00000000100066b4       0x2c libpicowi.a(picowi_ioctl.c.obj)
-                0x00000000100066b4                ioctl_set_data
+                0x00000000100066ac       0x2c libpicowi.a(picowi_ioctl.c.obj)
+                0x00000000100066ac                ioctl_set_data
  .text.ioctl_wr_int32
-                0x00000000100066e0       0x20 libpicowi.a(picowi_ioctl.c.obj)
-                0x00000000100066e0                ioctl_wr_int32
+                0x00000000100066d8       0x20 libpicowi.a(picowi_ioctl.c.obj)
+                0x00000000100066d8                ioctl_wr_int32
  .text.ioctl_wr_data
-                0x0000000010006700       0x1c libpicowi.a(picowi_ioctl.c.obj)
-                0x0000000010006700                ioctl_wr_data
+                0x00000000100066f8       0x1c libpicowi.a(picowi_ioctl.c.obj)
+                0x00000000100066f8                ioctl_wr_data
  .text.ioctl_err_display
-                0x000000001000671c       0x60 libpicowi.a(picowi_ioctl.c.obj)
-                0x000000001000671c                ioctl_err_display
+                0x0000000010006714       0x60 libpicowi.a(picowi_ioctl.c.obj)
+                0x0000000010006714                ioctl_err_display
  .text.events_enable
-                0x000000001000677c       0x80 libpicowi.a(picowi_event.c.obj)
-                0x000000001000677c                events_enable
+                0x0000000010006774       0x80 libpicowi.a(picowi_event.c.obj)
+                0x0000000010006774                events_enable
  .text.add_event_handler
-                0x00000000100067fc       0x38 libpicowi.a(picowi_event.c.obj)
-                0x00000000100067fc                add_event_handler
+                0x00000000100067f4       0x38 libpicowi.a(picowi_event.c.obj)
+                0x00000000100067f4                add_event_handler
  .text.event_read
-                0x0000000010006834      0x130 libpicowi.a(picowi_event.c.obj)
-                0x0000000010006834                event_read
+                0x000000001000682c      0x130 libpicowi.a(picowi_event.c.obj)
+                0x000000001000682c                event_read
  .text.event_poll
-                0x0000000010006964      0x1b8 libpicowi.a(picowi_event.c.obj)
-                0x0000000010006964                event_poll
+                0x000000001000695c      0x1b8 libpicowi.a(picowi_event.c.obj)
+                0x000000001000695c                event_poll
  .text.event_net_tx
-                0x0000000010006b1c       0x98 libpicowi.a(picowi_event.c.obj)
-                0x0000000010006b1c                event_net_tx
+                0x0000000010006b14       0x98 libpicowi.a(picowi_event.c.obj)
+                0x0000000010006b14                event_net_tx
  .text.join_restart
-                0x0000000010006bb4      0x1c4 libpicowi.a(picowi_join.c.obj)
-                0x0000000010006bb4                join_restart
+                0x0000000010006bac      0x1c4 libpicowi.a(picowi_join.c.obj)
+                0x0000000010006bac                join_restart
  .text.join_event_handler
-                0x0000000010006d78       0xa8 libpicowi.a(picowi_join.c.obj)
-                0x0000000010006d78                join_event_handler
+                0x0000000010006d70       0xa8 libpicowi.a(picowi_join.c.obj)
+                0x0000000010006d70                join_event_handler
  .text.join_state_poll
-                0x0000000010006e20      0x12c libpicowi.a(picowi_join.c.obj)
-                0x0000000010006e20                join_state_poll
+                0x0000000010006e18      0x12c libpicowi.a(picowi_join.c.obj)
+                0x0000000010006e18                join_state_poll
  .text.join_start
-                0x0000000010006f4c      0x124 libpicowi.a(picowi_join.c.obj)
-                0x0000000010006f4c                join_start
+                0x0000000010006f44      0x124 libpicowi.a(picowi_join.c.obj)
+                0x0000000010006f44                join_start
  .text.link_check
-                0x0000000010007070       0x24 libpicowi.a(picowi_join.c.obj)
-                0x0000000010007070                link_check
- .text          0x0000000010007094      0xb28 libcherryusblib.a(usb_dc_rp2040.c.obj)
-                0x00000000100073e0                usb_dc_init
-                0x0000000010007474                usb_dc_deinit
-                0x0000000010007478                usbd_set_address
-                0x0000000010007488                usbd_get_port_speed
-                0x000000001000748c                usbd_ep_open
-                0x00000000100075a8                usbd_ep_close
-                0x000000001000762c                usbd_ep_set_stall
-                0x0000000010007680                usbd_ep_clear_stall
-                0x00000000100076e0                usbd_ep_is_stalled
-                0x00000000100076e4                usbd_ep_start_write
-                0x000000001000784c                usbd_ep_start_read
-                0x00000000100079e4                isr_irq5
- .text          0x0000000010007bbc       0xfc libcherryusblib.a(usbd_cdc.c.obj)
-                0x0000000010007bbc                usbd_cdc_acm_init_intf
-                0x0000000010007bd0                usbd_cdc_acm_set_line_coding
-                0x0000000010007bd4                usbd_cdc_acm_get_line_coding
-                0x0000000010007bf4                usbd_cdc_acm_set_rts
-                0x0000000010007bf8                usbd_cdc_acm_send_break
- .text          0x0000000010007cb8      0xae4 libcherryusblib.a(usbd_rndis.c.obj)
-                0x0000000010007cb8                rndis_int_in
-                0x0000000010007cf4                rndis_bulk_out
-                0x0000000010007d38                rndis_bulk_in
-                0x0000000010008168                usbd_rndis_eth_rx
-                0x000000001000842c                usbd_rndis_eth_tx
-                0x0000000010008718                usbd_rndis_init_intf
- .text          0x000000001000879c      0xf5c libcherryusblib.a(usbd_core.c.obj)
-                0x000000001000879c                usbd_event_ep0_in_complete_handler
-                0x00000000100090cc                usbd_event_ep0_out_complete_handler
-                0x0000000010009134                usbd_event_connect_handler
-                0x0000000010009158                usbd_event_disconnect_handler
-                0x000000001000917c                usbd_event_resume_handler
-                0x00000000100091a0                usbd_event_suspend_handler
-                0x00000000100091c4                usbd_event_reset_handler
-                0x0000000010009288                usbd_event_ep0_setup_complete_handler
-                0x0000000010009398                usbd_event_ep_in_complete_handler
-                0x00000000100093c8                usbd_event_ep_out_complete_handler
-                0x00000000100093f8                usbd_desc_register
-                0x0000000010009440                usbd_msosv1_desc_register
-                0x0000000010009454                usbd_msosv2_desc_register
-                0x0000000010009468                usbd_bos_desc_register
-                0x000000001000947c                usbd_add_interface
-                0x00000000100094bc                usbd_add_endpoint
-                0x0000000010009518                usbd_get_ep_mps
-                0x0000000010009568                usbd_get_ep_mult
-                0x00000000100095b8                usb_device_is_configured
-                0x00000000100095dc                usbd_initialize
-                0x0000000010009664                usbd_deinitialize
- .text          0x00000000100096f8       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x00000000100096f8                strlen
+                0x0000000010007068       0x24 libpicowi.a(picowi_join.c.obj)
+                0x0000000010007068                link_check
+ .text          0x000000001000708c      0xb28 libcherryusblib.a(usb_dc_rp2040.c.obj)
+                0x00000000100073d8                usb_dc_init
+                0x000000001000746c                usb_dc_deinit
+                0x0000000010007470                usbd_set_address
+                0x0000000010007480                usbd_get_port_speed
+                0x0000000010007484                usbd_ep_open
+                0x00000000100075a0                usbd_ep_close
+                0x0000000010007624                usbd_ep_set_stall
+                0x0000000010007678                usbd_ep_clear_stall
+                0x00000000100076d8                usbd_ep_is_stalled
+                0x00000000100076dc                usbd_ep_start_write
+                0x0000000010007844                usbd_ep_start_read
+                0x00000000100079dc                isr_irq5
+ .text          0x0000000010007bb4       0xfc libcherryusblib.a(usbd_cdc.c.obj)
+                0x0000000010007bb4                usbd_cdc_acm_init_intf
+                0x0000000010007bc8                usbd_cdc_acm_set_line_coding
+                0x0000000010007bcc                usbd_cdc_acm_get_line_coding
+                0x0000000010007bec                usbd_cdc_acm_set_rts
+                0x0000000010007bf0                usbd_cdc_acm_send_break
+ .text          0x0000000010007cb0      0xae4 libcherryusblib.a(usbd_rndis.c.obj)
+                0x0000000010007cb0                rndis_int_in
+                0x0000000010007cec                rndis_bulk_out
+                0x0000000010007d30                rndis_bulk_in
+                0x0000000010008160                usbd_rndis_eth_rx
+                0x0000000010008424                usbd_rndis_eth_tx
+                0x0000000010008710                usbd_rndis_init_intf
+ .text          0x0000000010008794      0xf5c libcherryusblib.a(usbd_core.c.obj)
+                0x0000000010008794                usbd_event_ep0_in_complete_handler
+                0x00000000100090c4                usbd_event_ep0_out_complete_handler
+                0x000000001000912c                usbd_event_connect_handler
+                0x0000000010009150                usbd_event_disconnect_handler
+                0x0000000010009174                usbd_event_resume_handler
+                0x0000000010009198                usbd_event_suspend_handler
+                0x00000000100091bc                usbd_event_reset_handler
+                0x0000000010009280                usbd_event_ep0_setup_complete_handler
+                0x0000000010009390                usbd_event_ep_in_complete_handler
+                0x00000000100093c0                usbd_event_ep_out_complete_handler
+                0x00000000100093f0                usbd_desc_register
+                0x0000000010009438                usbd_msosv1_desc_register
+                0x000000001000944c                usbd_msosv2_desc_register
+                0x0000000010009460                usbd_bos_desc_register
+                0x0000000010009474                usbd_add_interface
+                0x00000000100094b4                usbd_add_endpoint
+                0x0000000010009510                usbd_get_ep_mps
+                0x0000000010009560                usbd_get_ep_mult
+                0x00000000100095b0                usb_device_is_configured
+                0x00000000100095d4                usbd_initialize
+                0x000000001000965c                usbd_deinitialize
+ .text          0x00000000100096f0       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x00000000100096f0                strlen
  *(.fini)
- .fini          0x0000000010009754        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x0000000010009754                _fini
- .fini.__stub   0x0000000010009758       0x40 linker stubs
+ .fini          0x000000001000974c        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x000000001000974c                _fini
+ .fini.__stub   0x0000000010009750       0x40 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2161,259 +2161,260 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x0000000010009798        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010009798                . = ALIGN (0x4)
+ .eh_frame      0x0000000010009790        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010009790                . = ALIGN (0x4)
 
-.glue_7         0x0000000010009798        0x0
- .glue_7        0x0000000010009798        0x0 linker stubs
+.glue_7         0x0000000010009790        0x0
+ .glue_7        0x0000000010009790        0x0 linker stubs
 
-.glue_7t        0x0000000010009798        0x0
- .glue_7t       0x0000000010009798        0x0 linker stubs
+.glue_7t        0x0000000010009790        0x0
+ .glue_7t       0x0000000010009790        0x0 linker stubs
 
-.vfp11_veneer   0x0000000010009798        0x0
- .vfp11_veneer  0x0000000010009798        0x0 linker stubs
+.vfp11_veneer   0x0000000010009790        0x0
+ .vfp11_veneer  0x0000000010009790        0x0 linker stubs
 
-.v4_bx          0x0000000010009798        0x0
- .v4_bx         0x0000000010009798        0x0 linker stubs
+.v4_bx          0x0000000010009790        0x0
+ .v4_bx         0x0000000010009790        0x0 linker stubs
 
-.iplt           0x0000000010009798        0x0
- .iplt          0x0000000010009798        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000010009790        0x0
+ .iplt          0x0000000010009790        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x0000000010009798    0x385bc
+.rodata         0x0000000010009790    0x385ac
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.main.str1.4
-                0x0000000010009798       0xcc CMakeFiles/join_usb_rndis.dir/join_usb_rndis.c.obj
+                0x0000000010009790       0xb8 CMakeFiles/join_usb_rndis.dir/join_usb_rndis.c.obj
  .rodata.cdc_descriptor
-                0x0000000010009864      0x19a CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
- *fill*         0x00000000100099fe        0x2 
+                0x0000000010009848      0x19a CMakeFiles/join_usb_rndis.dir/src/cdc_rndis_device.c.obj
+ *fill*         0x00000000100099e2        0x2 
  .rodata.pbuf_free.part.0.str1.4
-                0x0000000010009a00       0x4e CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
- *fill*         0x0000000010009a4e        0x2 
+                0x00000000100099e4       0x4e CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+ *fill*         0x0000000010009a32        0x2 
  .rodata.pbuf_alloc.str1.4
-                0x0000000010009a50       0x1b CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
- *fill*         0x0000000010009a6b        0x1 
+                0x0000000010009a34       0x1b CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+ *fill*         0x0000000010009a4f        0x1 
  .rodata.pbuf_add_header.str1.4
-                0x0000000010009a6c        0xa CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
- *fill*         0x0000000010009a76        0x2 
+                0x0000000010009a50        0xa CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+ *fill*         0x0000000010009a5a        0x2 
  .rodata.pbuf_take.str1.4
-                0x0000000010009a78       0x2e CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
- *fill*         0x0000000010009aa6        0x2 
+                0x0000000010009a5c       0x2e CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+ *fill*         0x0000000010009a8a        0x2 
  .rodata.mem_free.str1.4
-                0x0000000010009aa8       0xfe CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj
- *fill*         0x0000000010009ba6        0x2 
+                0x0000000010009a8c       0xfe CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj
+ *fill*         0x0000000010009b8a        0x2 
  .rodata.mem_trim.str1.4
-                0x0000000010009ba8       0x49 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj
- *fill*         0x0000000010009bf1        0x3 
+                0x0000000010009b8c       0x49 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj
+ *fill*         0x0000000010009bd5        0x3 
  .rodata.mem_malloc.str1.4
-                0x0000000010009bf4       0x83 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj
- *fill*         0x0000000010009c77        0x1 
+                0x0000000010009bd8       0x83 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c.obj
+ *fill*         0x0000000010009c5b        0x1 
  .rodata.memp_malloc_pool.str1.4
-                0x0000000010009c78       0x37 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
- *fill*         0x0000000010009caf        0x1 
+                0x0000000010009c5c       0x37 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
+ *fill*         0x0000000010009c93        0x1 
  .rodata.memp_free_pool.str1.4
-                0x0000000010009cb0       0x20 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
+                0x0000000010009c94       0x20 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
  .rodata.memp_FRAG_PBUF
-                0x0000000010009cd0       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
-                0x0000000010009cd0                memp_FRAG_PBUF
+                0x0000000010009cb4       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
+                0x0000000010009cb4                memp_FRAG_PBUF
  .rodata.memp_PBUF
-                0x0000000010009ce0       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
-                0x0000000010009ce0                memp_PBUF
+                0x0000000010009cc4       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
+                0x0000000010009cc4                memp_PBUF
  .rodata.memp_PBUF_POOL
-                0x0000000010009cf0       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
-                0x0000000010009cf0                memp_PBUF_POOL
+                0x0000000010009cd4       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
+                0x0000000010009cd4                memp_PBUF_POOL
  .rodata.memp_REASSDATA
-                0x0000000010009d00       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
-                0x0000000010009d00                memp_REASSDATA
+                0x0000000010009ce4       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
+                0x0000000010009ce4                memp_REASSDATA
  .rodata.memp_SYS_TIMEOUT
-                0x0000000010009d10       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
-                0x0000000010009d10                memp_SYS_TIMEOUT
+                0x0000000010009cf4       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
+                0x0000000010009cf4                memp_SYS_TIMEOUT
  .rodata.memp_UDP_PCB
-                0x0000000010009d20       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
-                0x0000000010009d20                memp_UDP_PCB
+                0x0000000010009d04       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
+                0x0000000010009d04                memp_UDP_PCB
  .rodata.memp_pools
-                0x0000000010009d30       0x18 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
-                0x0000000010009d30                memp_pools
+                0x0000000010009d14       0x18 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/memp.c.obj
+                0x0000000010009d14                memp_pools
  .rodata.hardware_alarm_claim.str1.4
-                0x0000000010009d48       0x22 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x0000000010009d6a        0x2 
+                0x0000000010009d2c       0x22 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x0000000010009d4e        0x2 
  .rodata.panic.str1.4
-                0x0000000010009d6c       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010009d50       0x10 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                          0x12 (size before relaxing)
  .rodata.hard_assertion_failure.str1.4
-                0x0000000010009d7c        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010009d60        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x0000000010009d88       0x15 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010009d9d        0x3 
+                0x0000000010009d6c       0x15 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x0000000010009d81        0x3 
  .rodata._vsnprintf
-                0x0000000010009da0      0x1e0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010009d84      0x1e0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x0000000010009f64        0x4 
  .rodata.pow10.0
-                0x0000000010009f80       0x50 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010009f68       0x50 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.str1.4
-                0x0000000010009fd0       0x44 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010009fb8       0x44 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x000000001000a014        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010009ffc        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x000000001000a020        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000a008        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x000000001000a02c        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000a014        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x000000001000a038        0x2 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x000000001000a03a        0x2 
+                0x000000001000a020        0x2 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x000000001000a022        0x2 
  .rodata.str1.4
-                0x000000001000a03c       0x2c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000a024       0x2c CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_33.4
-                0x000000001000a068        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000a050        0xc CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_34.5
-                0x000000001000a074        0x8 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000a05c        0x8 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.pio_claim_unused_sm.str1.4
-                0x000000001000a07c       0x24 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x000000001000a064       0x24 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .rodata.pio_add_program.str1.4
-                0x000000001000a0a0       0x11 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- *fill*         0x000000001000a0b1        0x3 
+                0x000000001000a088       0x11 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+ *fill*         0x000000001000a099        0x3 
  .rodata.dma_claim_unused_channel.str1.4
-                0x000000001000a0b4       0x1e CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
- *fill*         0x000000001000a0d2        0x2 
+                0x000000001000a09c       0x1e CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+ *fill*         0x000000001000a0ba        0x2 
  .rodata.wifi_clm_load.str1.4
-                0x000000001000a0d4        0x8 libpicowi.a(picowi_init.c.obj)
+                0x000000001000a0bc        0x8 libpicowi.a(picowi_init.c.obj)
  .rodata.mac_addr_str.str1.4
-                0x000000001000a0dc       0x1e libpicowi.a(picowi_init.c.obj)
- *fill*         0x000000001000a0fa        0x2 
+                0x000000001000a0c4       0x1e libpicowi.a(picowi_init.c.obj)
+ *fill*         0x000000001000a0e2        0x2 
  .rodata.disp_bytes.str1.4
-                0x000000001000a0fc        0x6 libpicowi.a(picowi_init.c.obj)
- *fill*         0x000000001000a102        0x2 
+                0x000000001000a0e4        0x6 libpicowi.a(picowi_init.c.obj)
+ *fill*         0x000000001000a0ea        0x2 
  .rodata.wifi_init.str1.4
-                0x000000001000a104       0x7c libpicowi.a(picowi_init.c.obj)
+                0x000000001000a0ec       0x7c libpicowi.a(picowi_init.c.obj)
  .rodata.wifi_reg_read.str1.4
-                0x000000001000a180       0x37 libpicowi.a(picowi_wifi.c.obj)
- *fill*         0x000000001000a1b7        0x1 
+                0x000000001000a168       0x37 libpicowi.a(picowi_wifi.c.obj)
+ *fill*         0x000000001000a19f        0x1 
  .rodata.wifi_reg_write.str1.4
-                0x000000001000a1b8       0x27 libpicowi.a(picowi_wifi.c.obj)
- *fill*         0x000000001000a1df        0x1 
+                0x000000001000a1a0       0x27 libpicowi.a(picowi_wifi.c.obj)
+ *fill*         0x000000001000a1c7        0x1 
  .rodata.wifi_start.str1.4
-                0x000000001000a1e0       0x53 libpicowi.a(picowi_wifi.c.obj)
- *fill*         0x000000001000a233        0x1 
+                0x000000001000a1c8       0x53 libpicowi.a(picowi_wifi.c.obj)
+ *fill*         0x000000001000a21b        0x1 
  .rodata.picowi_pio_program
-                0x000000001000a234        0x6 libpicowi.a(picowi_wifi.c.obj)
- *fill*         0x000000001000a23a        0x2 
+                0x000000001000a21c        0x6 libpicowi.a(picowi_wifi.c.obj)
+ *fill*         0x000000001000a222        0x2 
  .rodata.picowi_pio_program_instructions
-                0x000000001000a23c       0x32 libpicowi.a(picowi_wifi.c.obj)
- *fill*         0x000000001000a26e        0x2 
+                0x000000001000a224       0x32 libpicowi.a(picowi_wifi.c.obj)
+ *fill*         0x000000001000a256        0x2 
  .rodata.ioctl_cmd.str1.4
-                0x000000001000a270       0x73 libpicowi.a(picowi_ioctl.c.obj)
+                0x000000001000a258       0x73 libpicowi.a(picowi_ioctl.c.obj)
                                          0x7b (size before relaxing)
- *fill*         0x000000001000a2e3        0x1 
+ *fill*         0x000000001000a2cb        0x1 
  .rodata.ioctl_err_display.str1.4
-                0x000000001000a2e4       0x24 libpicowi.a(picowi_ioctl.c.obj)
+                0x000000001000a2cc       0x24 libpicowi.a(picowi_ioctl.c.obj)
  .rodata.events_enable.str1.4
-                0x000000001000a308       0x12 libpicowi.a(picowi_event.c.obj)
- *fill*         0x000000001000a31a        0x2 
+                0x000000001000a2f0       0x12 libpicowi.a(picowi_event.c.obj)
+ *fill*         0x000000001000a302        0x2 
  .rodata.event_read.str1.4
-                0x000000001000a31c       0x55 libpicowi.a(picowi_event.c.obj)
- *fill*         0x000000001000a371        0x3 
+                0x000000001000a304       0x55 libpicowi.a(picowi_event.c.obj)
+ *fill*         0x000000001000a359        0x3 
  .rodata.event_poll.str1.4
-                0x000000001000a374       0x4f libpicowi.a(picowi_event.c.obj)
+                0x000000001000a35c       0x4f libpicowi.a(picowi_event.c.obj)
                                          0x5c (size before relaxing)
- *fill*         0x000000001000a3c3        0x1 
+ *fill*         0x000000001000a3ab        0x1 
  .rodata.event_net_tx.str1.4
-                0x000000001000a3c4       0x10 libpicowi.a(picowi_event.c.obj)
+                0x000000001000a3ac       0x10 libpicowi.a(picowi_event.c.obj)
  .rodata.join_restart.str1.4
-                0x000000001000a3d4       0x73 libpicowi.a(picowi_join.c.obj)
- *fill*         0x000000001000a447        0x1 
+                0x000000001000a3bc       0x73 libpicowi.a(picowi_join.c.obj)
+ *fill*         0x000000001000a42f        0x1 
  .rodata.join_state_poll.str1.4
-                0x000000001000a448       0x4d libpicowi.a(picowi_join.c.obj)
- *fill*         0x000000001000a495        0x3 
+                0x000000001000a430       0x4d libpicowi.a(picowi_join.c.obj)
+ *fill*         0x000000001000a47d        0x3 
  .rodata.join_start.str1.4
-                0x000000001000a498       0x53 libpicowi.a(picowi_join.c.obj)
- *fill*         0x000000001000a4eb        0x1 
+                0x000000001000a480       0x53 libpicowi.a(picowi_join.c.obj)
+ *fill*         0x000000001000a4d3        0x1 
  .rodata.str1.4
-                0x000000001000a4ec       0xaf libpicowi.a(picowi_join.c.obj)
+                0x000000001000a4d4       0xaf libpicowi.a(picowi_join.c.obj)
                                          0xb3 (size before relaxing)
- *fill*         0x000000001000a59b        0x1 
- .rodata        0x000000001000a59c       0x21 libpicowi.a(picowi_join.c.obj)
- *fill*         0x000000001000a5bd        0x3 
+ *fill*         0x000000001000a583        0x1 
+ .rodata        0x000000001000a584       0x21 libpicowi.a(picowi_join.c.obj)
+ *fill*         0x000000001000a5a5        0x3 
  .rodata.country_data
-                0x000000001000a5c0       0x14 libpicowi.a(picowi_join.c.obj)
-                0x000000001000a5c0                country_data
+                0x000000001000a5a8       0x14 libpicowi.a(picowi_join.c.obj)
+                0x000000001000a5a8                country_data
  .rodata.join_evts
-                0x000000001000a5d4       0x60 libpicowi.a(picowi_join.c.obj)
-                0x000000001000a5d4                join_evts
+                0x000000001000a5bc       0x60 libpicowi.a(picowi_join.c.obj)
+                0x000000001000a5bc                join_evts
  .rodata.mcast_addr
-                0x000000001000a634       0x3c libpicowi.a(picowi_join.c.obj)
-                0x000000001000a634                mcast_addr
+                0x000000001000a61c       0x3c libpicowi.a(picowi_join.c.obj)
+                0x000000001000a61c                mcast_addr
  .rodata.fw_clm_data
-                0x000000001000a670      0x3dc libpicowi.a(fw_43439.c.obj)
-                0x000000001000a670                fw_clm_data
+                0x000000001000a658      0x3dc libpicowi.a(fw_43439.c.obj)
+                0x000000001000a658                fw_clm_data
  .rodata.fw_clm_len
-                0x000000001000aa4c        0x4 libpicowi.a(fw_43439.c.obj)
-                0x000000001000aa4c                fw_clm_len
+                0x000000001000aa34        0x4 libpicowi.a(fw_43439.c.obj)
+                0x000000001000aa34                fw_clm_len
  .rodata.fw_firmware_data
-                0x000000001000aa50    0x36c00 libpicowi.a(fw_43439.c.obj)
-                0x000000001000aa50                fw_firmware_data
+                0x000000001000aa38    0x36c00 libpicowi.a(fw_43439.c.obj)
+                0x000000001000aa38                fw_firmware_data
  .rodata.fw_firmware_len
-                0x0000000010041650        0x4 libpicowi.a(fw_43439.c.obj)
-                0x0000000010041650                fw_firmware_len
+                0x0000000010041638        0x4 libpicowi.a(fw_43439.c.obj)
+                0x0000000010041638                fw_firmware_len
  .rodata.fw_nvram_data
-                0x0000000010041654      0x300 libpicowi.a(fw_43439.c.obj)
-                0x0000000010041654                fw_nvram_data
+                0x000000001004163c      0x300 libpicowi.a(fw_43439.c.obj)
+                0x000000001004163c                fw_nvram_data
  .rodata.fw_nvram_len
-                0x0000000010041954        0x4 libpicowi.a(fw_43439.c.obj)
-                0x0000000010041954                fw_nvram_len
+                0x000000001004193c        0x4 libpicowi.a(fw_43439.c.obj)
+                0x000000001004193c                fw_nvram_len
  .rodata.str1.4
-                0x0000000010041958       0xbc libcherryusblib.a(usb_dc_rp2040.c.obj)
+                0x0000000010041940       0xbc libcherryusblib.a(usb_dc_rp2040.c.obj)
  .rodata.str1.4
-                0x0000000010041a14       0x42 libcherryusblib.a(usbd_cdc.c.obj)
+                0x00000000100419fc       0x42 libcherryusblib.a(usbd_cdc.c.obj)
                                          0x5e (size before relaxing)
- *fill*         0x0000000010041a56        0x2 
+ *fill*         0x0000000010041a3e        0x2 
  .rodata.str1.4
-                0x0000000010041a58       0x88 libcherryusblib.a(usbd_rndis.c.obj)
+                0x0000000010041a40       0x88 libcherryusblib.a(usbd_rndis.c.obj)
                                          0xa0 (size before relaxing)
- .rodata        0x0000000010041ae0      0x100 libcherryusblib.a(usbd_rndis.c.obj)
-                0x0000000010041b6c                oid_supported_list
+ .rodata        0x0000000010041ac8      0x100 libcherryusblib.a(usbd_rndis.c.obj)
+                0x0000000010041b54                oid_supported_list
  .rodata.str1.4
-                0x0000000010041be0      0x14a libcherryusblib.a(usbd_core.c.obj)
+                0x0000000010041bc8      0x14a libcherryusblib.a(usbd_core.c.obj)
                                         0x172 (size before relaxing)
- *fill*         0x0000000010041d2a        0x2 
- .rodata        0x0000000010041d2c       0x28 libcherryusblib.a(usbd_core.c.obj)
-                0x0000000010041d54                . = ALIGN (0x4)
+ *fill*         0x0000000010041d12        0x2 
+ .rodata        0x0000000010041d14       0x28 libcherryusblib.a(usbd_core.c.obj)
+                0x0000000010041d3c                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x0000000010041d54                . = ALIGN (0x4)
+                0x0000000010041d3c                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000010041d54                __exidx_start = .
+                0x0000000010041d3c                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000010041d54                __exidx_end = .
-                0x0000000010041d54                . = ALIGN (0x4)
-                0x0000000010041d54                __binary_info_start = .
+                0x0000000010041d3c                __exidx_end = .
+                0x0000000010041d3c                . = ALIGN (0x4)
+                0x0000000010041d3c                __binary_info_start = .
 
-.binary_info    0x0000000010041d54       0x24
+.binary_info    0x0000000010041d3c       0x24
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x0000000010041d54        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010041d3c        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x0000000010041d58        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010041d40        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x0000000010041d5c        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010041d44        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x0000000010041d60        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010041d48        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x0000000010041d64        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010041d4c        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x0000000010041d68        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010041d50        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x0000000010041d6c        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010041d54        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr33
-                0x0000000010041d70        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010041d58        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr34
-                0x0000000010041d74        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010041d78                __binary_info_end = .
+                0x0000000010041d5c        0x4 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010041d60                __binary_info_end = .
 
-.rel.dyn        0x0000000010041d78        0x0
- .rel.iplt      0x0000000010041d78        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010041d78                . = ALIGN (0x4)
+.rel.dyn        0x0000000010041d60        0x0
+ .rel.iplt      0x0000000010041d60        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010041d60                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2422,7 +2423,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020000000       0xc0 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0x838 load address 0x0000000010041d78
+.data           0x00000000200000c0      0x838 load address 0x0000000010041d60
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2532,36 +2533,36 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.jcr)
                 0x00000000200008f8                . = ALIGN (0x4)
                 0x00000000200008f8                __data_end__ = .
-                0x0000000010041d78                __etext = LOADADDR (.data)
+                0x0000000010041d60                __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x00000000200008f8        0x0 load address 0x00000000100425b0
+                0x00000000200008f8        0x0 load address 0x0000000010042598
  .tm_clone_table
                 0x00000000200008f8        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x00000000200008f8        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x00000000200008f8        0x0 load address 0x00000000100425b0
+.igot.plt       0x00000000200008f8        0x0 load address 0x0000000010042598
  .igot.plt      0x00000000200008f8        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x00000000200008f8        0x0 load address 0x00000000100425b0
+                0x00000000200008f8        0x0 load address 0x0000000010042598
                 0x00000000200008f8                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x00000000100425b0
+.scratch_x      0x0000000020040000        0x0 load address 0x0000000010042598
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x00000000100425b0                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x0000000010042598                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x00000000100425b0
+.scratch_y      0x0000000020041000        0x0 load address 0x0000000010042598
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x00000000100425b0                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x0000000010042598                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x00000000200008f8     0xc474
                 0x00000000200008f8                . = ALIGN (0x4)
@@ -2787,8 +2788,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x00000000100425b0        0x0
-                0x00000000100425b0                PROVIDE (__flash_binary_end = .)
+.flash_end      0x0000000010042598        0x0
+                0x0000000010042598                PROVIDE (__flash_binary_end = .)
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2853,7 +2854,7 @@ LOAD CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk
 LOAD CMakeFiles/join_usb_rndis.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 LOAD libpicowi.a
 LOAD libcherryusblib.a
-LOAD /tmp/ccTuArTS.o
+LOAD /tmp/cc5puHKU.o
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2981,7 +2982,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000000008c0       0x2c libcherryusblib.a(usbd_core.c.obj)
  .ARM.attributes
-                0x00000000000008ec       0x22 /tmp/ccTuArTS.o
+                0x00000000000008ec       0x22 /tmp/cc5puHKU.o
  .ARM.attributes
                 0x000000000000090e       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

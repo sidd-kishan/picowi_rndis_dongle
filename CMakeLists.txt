@@ -144,6 +144,13 @@ add_executable(web_server web_server.c)
 target_link_libraries(web_server picowi pico_stdlib hardware_pio hardware_dma)
 pico_add_extra_outputs(web_server)
 
+# Create 'web_server' executable
+add_executable(web_server_usb_rndis web_server_usb_rndis.c  ${CMAKE_CURRENT_SOURCE_DIR}/src/cdc_rndis_device.c ${CMAKE_CURRENT_SOURCE_DIR}/src/lwip.c ${LWIP_DIR}/src/core/pbuf.c ${LWIP_DIR}/src/core/mem.c ${LWIP_DIR}/src/core/memp.c ${LWIP_DIR}/src/core/stats.c)
+target_link_libraries(web_server_usb_rndis picowi pico_stdlib hardware_pio hardware_dma cherryusblib)
+pico_add_extra_outputs(web_server_usb_rndis)
+
+
+
 # Create 'web_cam' executable
 #add_executable(web_cam web_cam.c camera/cam_5642.c)
 add_executable(web_cam web_cam.c camera/cam_2640.c)

@@ -37,25 +37,27 @@
 #include "lwip.h"
 
 // The hard-coded password is for test purposes only!!!
-#define SSID                "testnet"
+#define SSID                "test"
 #define PASSWD              "testpass"
-#define EVENT_POLL_USEC     100000
+#define EVENT_POLL_USEC     1000
 
 uint8_t rndis_mac[6] = { 0x20, 0x89, 0x84, 0x6A, 0x96, 0xAA };
 extern MACADDR my_mac;
 
 int simple_eth_event_handler(EVENT_INFO *eip)
 {
-    if (eip->chan == SDPCM_CHAN_DATA &&
-        eip->dlen >= sizeof(ETHERHDR))
+    if (eip->chan == SDPCM_CHAN_DATA)
     {
 		struct pbuf *out_pkt;
 		out_pkt = pbuf_alloc(PBUF_RAW, eip->dlen, PBUF_POOL);
 		//memcpy(out_pkt->payload, buf, len);
 		pbuf_take(out_pkt, eip->data, eip->dlen);
         usbd_rndis_eth_tx(out_pkt);
+		pbuf_free(out_pkt);
+		out_pkt = NULL;
+		return(1);
     }
-    return(1);
+    return 0;
 }
 
 int main() 
@@ -87,15 +89,17 @@ int main()
         ustimeout(&poll_ticks, 0);
         while (1)
         {
-			p = usbd_rndis_eth_rx();
-			if (p != NULL) {
-				event_net_tx(p->payload,p->len);
-				pbuf_free(p);
-				p = NULL;
-			}
             // Toggle LED at 1 Hz if joined, 5 Hz if not
             if (ustimeout(&led_ticks, link_check() > 0 ? 500000 : 100000))
                 wifi_set_led(ledon = !ledon);
+			if(link_check()){
+				p = usbd_rndis_eth_rx();
+				if (p != NULL) {
+					event_net_tx(p->payload,p->len);
+					pbuf_free(p);
+					p = NULL;
+				}
+			}
                 
             // Get any events, poll the joining state machine
             if (wifi_get_irq() || ustimeout(&poll_ticks, EVENT_POLL_USEC))

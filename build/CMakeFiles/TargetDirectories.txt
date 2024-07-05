@@ -11,6 +11,7 @@
 /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/dns.dir
 /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/udp_socket_server.dir
 /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/web_server.dir
+/mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/web_server_usb_rndis.dir
 /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/web_cam.dir
 /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/edit_cache.dir
 /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/build/CMakeFiles/rebuild_cache.dir

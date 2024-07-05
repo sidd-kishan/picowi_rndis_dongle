@@ -1262,9 +1262,9 @@ Discarded input sections
                 0x0000000000000000       0x1c libpicowi.a(picowi_dhcp.c.obj)
  .rodata.dhcp_cookie
                 0x0000000000000000        0x4 libpicowi.a(picowi_dhcp.c.obj)
- .text          0x0000000000000000        0x0 /tmp/ccWG42Nf.o
- .data          0x0000000000000000        0x0 /tmp/ccWG42Nf.o
- .bss           0x0000000000000000        0x0 /tmp/ccWG42Nf.o
+ .text          0x0000000000000000        0x0 /tmp/cc2TEN1T.o
+ .data          0x0000000000000000        0x0 /tmp/cc2TEN1T.o
+ .bss           0x0000000000000000        0x0 /tmp/cc2TEN1T.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1487,7 +1487,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccWG42Nf.o
+ .boot2         0x0000000010000000      0x100 /tmp/cc2TEN1T.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2295,7 +2295,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .iplt           0x000000001000b330        0x0
  .iplt          0x000000001000b330        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x000000001000b330    0x38d54
+.rodata         0x000000001000b330    0x38d6c
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.web_bin_data_handler.str1.4
                 0x000000001000b330       0xfc CMakeFiles/web_server.dir/web_server.c.obj
@@ -2311,251 +2311,251 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x000000001000b600       0xcc CMakeFiles/web_server.dir/web_server.c.obj
                                          0xd0 (size before relaxing)
  .rodata.main.str1.4
-                0x000000001000b6cc       0x92 CMakeFiles/web_server.dir/web_server.c.obj
- *fill*         0x000000001000b75e        0x2 
+                0x000000001000b6cc       0xa6 CMakeFiles/web_server.dir/web_server.c.obj
+ *fill*         0x000000001000b772        0x2 
  .rodata.b64chars
-                0x000000001000b760       0x41 CMakeFiles/web_server.dir/web_server.c.obj
-                0x000000001000b760                b64chars
- *fill*         0x000000001000b7a1        0x3 
- .rodata.hexchar
-                0x000000001000b7a4       0x11 CMakeFiles/web_server.dir/web_server.c.obj
-                0x000000001000b7a4                hexchar
+                0x000000001000b774       0x41 CMakeFiles/web_server.dir/web_server.c.obj
+                0x000000001000b774                b64chars
  *fill*         0x000000001000b7b5        0x3 
+ .rodata.hexchar
+                0x000000001000b7b8       0x11 CMakeFiles/web_server.dir/web_server.c.obj
+                0x000000001000b7b8                hexchar
+ *fill*         0x000000001000b7c9        0x7 
  .rodata.at_the_end_of_time
-                0x000000001000b7b8        0x8 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
-                0x000000001000b7b8                at_the_end_of_time
+                0x000000001000b7d0        0x8 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000b7d0                at_the_end_of_time
  .rodata.hardware_alarm_claim.str1.4
-                0x000000001000b7c0       0x22 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x000000001000b7e2        0x2 
+                0x000000001000b7d8       0x22 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x000000001000b7fa        0x2 
  .rodata.panic.str1.4
-                0x000000001000b7e4       0x10 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000000001000b7fc       0x10 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                          0x12 (size before relaxing)
  .rodata.hard_assertion_failure.str1.4
-                0x000000001000b7f4        0xc CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000000001000b80c        0xc CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x000000001000b800       0x15 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x000000001000b815        0x3 
+                0x000000001000b818       0x15 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x000000001000b82d        0x3 
  .rodata._vsnprintf
-                0x000000001000b818      0x1e0 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x000000001000b830      0x1e0 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.pow10.0
-                0x000000001000b9f8       0x50 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x000000001000ba10       0x50 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.str1.4
-                0x000000001000ba48       0x40 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000ba60       0x40 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x000000001000ba88        0xc CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .rodata.__bi_75
-                0x000000001000ba94        0xc CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .rodata.__bi_81
                 0x000000001000baa0        0xc CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .rodata.__bi_75
+                0x000000001000baac        0xc CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .rodata.__bi_81
+                0x000000001000bab8        0xc CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x000000001000baac        0x2 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x000000001000baae        0x2 
+                0x000000001000bac4        0x2 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x000000001000bac6        0x2 
  .rodata.str1.4
-                0x000000001000bab0       0x2c CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000bac8       0x2c CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_33.4
-                0x000000001000badc        0xc CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000baf4        0xc CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_34.5
-                0x000000001000bae8        0x8 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000bb00        0x8 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.pio_claim_unused_sm.str1.4
-                0x000000001000baf0       0x24 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x000000001000bb08       0x24 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .rodata.pio_add_program.str1.4
-                0x000000001000bb14       0x11 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- *fill*         0x000000001000bb25        0x3 
+                0x000000001000bb2c       0x11 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+ *fill*         0x000000001000bb3d        0x3 
  .rodata.dma_claim_unused_channel.str1.4
-                0x000000001000bb28       0x1e CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
- *fill*         0x000000001000bb46        0x2 
+                0x000000001000bb40       0x1e CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+ *fill*         0x000000001000bb5e        0x2 
  .rodata.wifi_clm_load.str1.4
-                0x000000001000bb48        0x8 libpicowi.a(picowi_init.c.obj)
+                0x000000001000bb60        0x8 libpicowi.a(picowi_init.c.obj)
  .rodata.mac_addr_str.str1.4
-                0x000000001000bb50       0x1e libpicowi.a(picowi_init.c.obj)
- *fill*         0x000000001000bb6e        0x2 
+                0x000000001000bb68       0x1e libpicowi.a(picowi_init.c.obj)
+ *fill*         0x000000001000bb86        0x2 
  .rodata.disp_bytes.str1.4
-                0x000000001000bb70        0x6 libpicowi.a(picowi_init.c.obj)
- *fill*         0x000000001000bb76        0x2 
+                0x000000001000bb88        0x6 libpicowi.a(picowi_init.c.obj)
+ *fill*         0x000000001000bb8e        0x2 
  .rodata.wifi_init.str1.4
-                0x000000001000bb78       0x7c libpicowi.a(picowi_init.c.obj)
+                0x000000001000bb90       0x7c libpicowi.a(picowi_init.c.obj)
  .rodata.wifi_reg_read.str1.4
-                0x000000001000bbf4       0x37 libpicowi.a(picowi_wifi.c.obj)
- *fill*         0x000000001000bc2b        0x1 
+                0x000000001000bc0c       0x37 libpicowi.a(picowi_wifi.c.obj)
+ *fill*         0x000000001000bc43        0x1 
  .rodata.wifi_reg_write.str1.4
-                0x000000001000bc2c       0x27 libpicowi.a(picowi_wifi.c.obj)
- *fill*         0x000000001000bc53        0x1 
+                0x000000001000bc44       0x27 libpicowi.a(picowi_wifi.c.obj)
+ *fill*         0x000000001000bc6b        0x1 
  .rodata.wifi_start.str1.4
-                0x000000001000bc54       0x53 libpicowi.a(picowi_wifi.c.obj)
- *fill*         0x000000001000bca7        0x1 
+                0x000000001000bc6c       0x53 libpicowi.a(picowi_wifi.c.obj)
+ *fill*         0x000000001000bcbf        0x1 
  .rodata.picowi_pio_program
-                0x000000001000bca8        0x6 libpicowi.a(picowi_wifi.c.obj)
- *fill*         0x000000001000bcae        0x2 
+                0x000000001000bcc0        0x6 libpicowi.a(picowi_wifi.c.obj)
+ *fill*         0x000000001000bcc6        0x2 
  .rodata.picowi_pio_program_instructions
-                0x000000001000bcb0       0x32 libpicowi.a(picowi_wifi.c.obj)
- *fill*         0x000000001000bce2        0x2 
+                0x000000001000bcc8       0x32 libpicowi.a(picowi_wifi.c.obj)
+ *fill*         0x000000001000bcfa        0x2 
  .rodata.ioctl_cmd.str1.4
-                0x000000001000bce4       0x73 libpicowi.a(picowi_ioctl.c.obj)
+                0x000000001000bcfc       0x73 libpicowi.a(picowi_ioctl.c.obj)
                                          0x7b (size before relaxing)
- *fill*         0x000000001000bd57        0x1 
+ *fill*         0x000000001000bd6f        0x1 
  .rodata.ioctl_err_display.str1.4
-                0x000000001000bd58       0x24 libpicowi.a(picowi_ioctl.c.obj)
+                0x000000001000bd70       0x24 libpicowi.a(picowi_ioctl.c.obj)
  .rodata.events_enable.str1.4
-                0x000000001000bd7c       0x12 libpicowi.a(picowi_event.c.obj)
- *fill*         0x000000001000bd8e        0x2 
+                0x000000001000bd94       0x12 libpicowi.a(picowi_event.c.obj)
+ *fill*         0x000000001000bda6        0x2 
  .rodata.event_read.str1.4
-                0x000000001000bd90       0x55 libpicowi.a(picowi_event.c.obj)
- *fill*         0x000000001000bde5        0x3 
+                0x000000001000bda8       0x55 libpicowi.a(picowi_event.c.obj)
+ *fill*         0x000000001000bdfd        0x3 
  .rodata.event_poll.str1.4
-                0x000000001000bde8       0x4f libpicowi.a(picowi_event.c.obj)
+                0x000000001000be00       0x4f libpicowi.a(picowi_event.c.obj)
                                          0x5c (size before relaxing)
- *fill*         0x000000001000be37        0x1 
+ *fill*         0x000000001000be4f        0x1 
  .rodata.event_net_tx.str1.4
-                0x000000001000be38       0x10 libpicowi.a(picowi_event.c.obj)
+                0x000000001000be50       0x10 libpicowi.a(picowi_event.c.obj)
  .rodata.join_restart.str1.4
-                0x000000001000be48       0x73 libpicowi.a(picowi_join.c.obj)
- *fill*         0x000000001000bebb        0x1 
+                0x000000001000be60       0x73 libpicowi.a(picowi_join.c.obj)
+ *fill*         0x000000001000bed3        0x1 
  .rodata.join_state_poll.str1.4
-                0x000000001000bebc       0x4d libpicowi.a(picowi_join.c.obj)
- *fill*         0x000000001000bf09        0x3 
+                0x000000001000bed4       0x4d libpicowi.a(picowi_join.c.obj)
+ *fill*         0x000000001000bf21        0x3 
  .rodata.join_start.str1.4
-                0x000000001000bf0c       0x53 libpicowi.a(picowi_join.c.obj)
- *fill*         0x000000001000bf5f        0x1 
+                0x000000001000bf24       0x53 libpicowi.a(picowi_join.c.obj)
+ *fill*         0x000000001000bf77        0x1 
  .rodata.str1.4
-                0x000000001000bf60       0xaf libpicowi.a(picowi_join.c.obj)
+                0x000000001000bf78       0xaf libpicowi.a(picowi_join.c.obj)
                                          0xb3 (size before relaxing)
- *fill*         0x000000001000c00f        0x1 
- .rodata        0x000000001000c010       0x21 libpicowi.a(picowi_join.c.obj)
- *fill*         0x000000001000c031        0x3 
+ *fill*         0x000000001000c027        0x1 
+ .rodata        0x000000001000c028       0x21 libpicowi.a(picowi_join.c.obj)
+ *fill*         0x000000001000c049        0x3 
  .rodata.country_data
-                0x000000001000c034       0x14 libpicowi.a(picowi_join.c.obj)
-                0x000000001000c034                country_data
+                0x000000001000c04c       0x14 libpicowi.a(picowi_join.c.obj)
+                0x000000001000c04c                country_data
  .rodata.join_evts
-                0x000000001000c048       0x60 libpicowi.a(picowi_join.c.obj)
-                0x000000001000c048                join_evts
+                0x000000001000c060       0x60 libpicowi.a(picowi_join.c.obj)
+                0x000000001000c060                join_evts
  .rodata.mcast_addr
-                0x000000001000c0a8       0x3c libpicowi.a(picowi_join.c.obj)
-                0x000000001000c0a8                mcast_addr
+                0x000000001000c0c0       0x3c libpicowi.a(picowi_join.c.obj)
+                0x000000001000c0c0                mcast_addr
  .rodata.ip_tx_eth.str1.4
-                0x000000001000c0e4        0x3 libpicowi.a(picowi_ip.c.obj)
+                0x000000001000c0fc        0x3 libpicowi.a(picowi_ip.c.obj)
                                          0x23 (size before relaxing)
- *fill*         0x000000001000c0e7        0x1 
+ *fill*         0x000000001000c0ff        0x1 
  .rodata.ip_make_arp.str1.4
-                0x000000001000c0e8       0x29 libpicowi.a(picowi_ip.c.obj)
+                0x000000001000c100       0x29 libpicowi.a(picowi_ip.c.obj)
                                          0x2d (size before relaxing)
- *fill*         0x000000001000c111        0x3 
+ *fill*         0x000000001000c129        0x3 
  .rodata.net_init.str1.4
-                0x000000001000c114       0x4d libpicowi.a(picowi_net.c.obj)
- *fill*         0x000000001000c161        0x3 
+                0x000000001000c12c       0x4d libpicowi.a(picowi_net.c.obj)
+ *fill*         0x000000001000c179        0x3 
  .rodata.net_join.str1.4
-                0x000000001000c164       0x3c libpicowi.a(picowi_net.c.obj)
+                0x000000001000c17c       0x3c libpicowi.a(picowi_net.c.obj)
  .rodata.net_state_poll.str1.4
-                0x000000001000c1a0       0x25 libpicowi.a(picowi_net.c.obj)
- *fill*         0x000000001000c1c5        0x3 
+                0x000000001000c1b8       0x25 libpicowi.a(picowi_net.c.obj)
+ *fill*         0x000000001000c1dd        0x3 
  .rodata.tcp_new_state.str1.4
-                0x000000001000c1c8       0x1e libpicowi.a(picowi_tcp.c.obj)
- *fill*         0x000000001000c1e6        0x2 
+                0x000000001000c1e0       0x1e libpicowi.a(picowi_tcp.c.obj)
+ *fill*         0x000000001000c1fe        0x2 
  .rodata.tcp_print_hdr.str1.4
-                0x000000001000c1e8       0x6d libpicowi.a(picowi_tcp.c.obj)
+                0x000000001000c200       0x6d libpicowi.a(picowi_tcp.c.obj)
                                          0x71 (size before relaxing)
- *fill*         0x000000001000c255        0x3 
+ *fill*         0x000000001000c26d        0x3 
  .rodata.tcp_tx.str1.4
-                0x000000001000c258        0xd libpicowi.a(picowi_tcp.c.obj)
- *fill*         0x000000001000c265        0x3 
+                0x000000001000c270        0xd libpicowi.a(picowi_tcp.c.obj)
+ *fill*         0x000000001000c27d        0x3 
  .rodata.tcp_sock_rx
-                0x000000001000c268       0x5c libpicowi.a(picowi_tcp.c.obj)
+                0x000000001000c280       0x5c libpicowi.a(picowi_tcp.c.obj)
  .rodata.tcp_server_event_handler.str1.4
-                0x000000001000c2c4        0xd libpicowi.a(picowi_tcp.c.obj)
- *fill*         0x000000001000c2d1        0x3 
+                0x000000001000c2dc        0xd libpicowi.a(picowi_tcp.c.obj)
+ *fill*         0x000000001000c2e9        0x3 
  .rodata.str1.4
-                0x000000001000c2d4       0xbe libpicowi.a(picowi_tcp.c.obj)
+                0x000000001000c2ec       0xbe libpicowi.a(picowi_tcp.c.obj)
                                          0xc2 (size before relaxing)
- *fill*         0x000000001000c392        0x2 
- .rodata        0x000000001000c394        0x2 libpicowi.a(picowi_tcp.c.obj)
- *fill*         0x000000001000c396        0x2 
+ *fill*         0x000000001000c3aa        0x2 
+ .rodata        0x000000001000c3ac        0x2 libpicowi.a(picowi_tcp.c.obj)
+ *fill*         0x000000001000c3ae        0x2 
  .rodata.web_resp_add_content_len.str1.4
-                0x000000001000c398       0x15 libpicowi.a(picowi_web.c.obj)
- *fill*         0x000000001000c3ad        0x3 
+                0x000000001000c3b0       0x15 libpicowi.a(picowi_web.c.obj)
+ *fill*         0x000000001000c3c5        0x3 
  .rodata.fw_clm_data
-                0x000000001000c3b0      0x3dc libpicowi.a(fw_43439.c.obj)
-                0x000000001000c3b0                fw_clm_data
+                0x000000001000c3c8      0x3dc libpicowi.a(fw_43439.c.obj)
+                0x000000001000c3c8                fw_clm_data
  .rodata.fw_clm_len
-                0x000000001000c78c        0x4 libpicowi.a(fw_43439.c.obj)
-                0x000000001000c78c                fw_clm_len
+                0x000000001000c7a4        0x4 libpicowi.a(fw_43439.c.obj)
+                0x000000001000c7a4                fw_clm_len
  .rodata.fw_firmware_data
-                0x000000001000c790    0x36c00 libpicowi.a(fw_43439.c.obj)
-                0x000000001000c790                fw_firmware_data
+                0x000000001000c7a8    0x36c00 libpicowi.a(fw_43439.c.obj)
+                0x000000001000c7a8                fw_firmware_data
  .rodata.fw_firmware_len
-                0x0000000010043390        0x4 libpicowi.a(fw_43439.c.obj)
-                0x0000000010043390                fw_firmware_len
+                0x00000000100433a8        0x4 libpicowi.a(fw_43439.c.obj)
+                0x00000000100433a8                fw_firmware_len
  .rodata.fw_nvram_data
-                0x0000000010043394      0x300 libpicowi.a(fw_43439.c.obj)
-                0x0000000010043394                fw_nvram_data
+                0x00000000100433ac      0x300 libpicowi.a(fw_43439.c.obj)
+                0x00000000100433ac                fw_nvram_data
  .rodata.fw_nvram_len
-                0x0000000010043694        0x4 libpicowi.a(fw_43439.c.obj)
-                0x0000000010043694                fw_nvram_len
+                0x00000000100436ac        0x4 libpicowi.a(fw_43439.c.obj)
+                0x00000000100436ac                fw_nvram_len
  .rodata.udp_event_handler.str1.4
-                0x0000000010043698       0x24 libpicowi.a(picowi_udp.c.obj)
+                0x00000000100436b0       0x24 libpicowi.a(picowi_udp.c.obj)
                                          0x2c (size before relaxing)
  .rodata.dhcp_add_hdr_data.str1.4
-                0x00000000100436bc        0x5 libpicowi.a(picowi_dhcp.c.obj)
- *fill*         0x00000000100436c1        0x3 
+                0x00000000100436d4        0x5 libpicowi.a(picowi_dhcp.c.obj)
+ *fill*         0x00000000100436d9        0x3 
  .rodata.dhcp_tx.str1.4
-                0x00000000100436c4       0x10 libpicowi.a(picowi_dhcp.c.obj)
+                0x00000000100436dc       0x10 libpicowi.a(picowi_dhcp.c.obj)
                                          0x14 (size before relaxing)
  .rodata.dhcp_rx.str1.4
-                0x00000000100436d4       0x30 libpicowi.a(picowi_dhcp.c.obj)
+                0x00000000100436ec       0x30 libpicowi.a(picowi_dhcp.c.obj)
                                          0x32 (size before relaxing)
  .rodata.dhcp_event_handler.str1.4
-                0x0000000010043704        0x4 libpicowi.a(picowi_dhcp.c.obj)
+                0x000000001004371c        0x4 libpicowi.a(picowi_dhcp.c.obj)
  .rodata.str1.4
-                0x0000000010043704       0x3b libpicowi.a(picowi_dhcp.c.obj)
- *fill*         0x000000001004373f        0x1 
- .rodata        0x0000000010043740        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-impure.o)
-                0x0000000010043740                _global_impure_ptr
+                0x000000001004371c       0x3b libpicowi.a(picowi_dhcp.c.obj)
+ *fill*         0x0000000010043757        0x1 
+ .rodata        0x0000000010043758        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-impure.o)
+                0x0000000010043758                _global_impure_ptr
  .rodata.str1.4
-                0x0000000010043744        0x3 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-perror.o)
+                0x000000001004375c        0x3 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-perror.o)
                                           0x6 (size before relaxing)
- *fill*         0x0000000010043747        0x1 
+ *fill*         0x000000001004375f        0x1 
  .rodata.str1.4
-                0x0000000010043748      0x700 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strerror.o)
+                0x0000000010043760      0x700 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strerror.o)
                                         0x701 (size before relaxing)
- .rodata        0x0000000010043e48      0x23c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strerror.o)
-                0x0000000010044084                . = ALIGN (0x4)
+ .rodata        0x0000000010043e60      0x23c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strerror.o)
+                0x000000001004409c                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x0000000010044084                . = ALIGN (0x4)
+                0x000000001004409c                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000010044084                __exidx_start = .
+                0x000000001004409c                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000010044084                __exidx_end = .
-                0x0000000010044084                . = ALIGN (0x4)
-                0x0000000010044084                __binary_info_start = .
+                0x000000001004409c                __exidx_end = .
+                0x000000001004409c                . = ALIGN (0x4)
+                0x000000001004409c                __binary_info_start = .
 
-.binary_info    0x0000000010044084       0x24
+.binary_info    0x000000001004409c       0x24
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x0000000010044084        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr30
-                0x0000000010044088        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr38
-                0x000000001004408c        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr44
-                0x0000000010044090        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr50
-                0x0000000010044094        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr75
-                0x0000000010044098        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr81
                 0x000000001004409c        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr30
+                0x00000000100440a0        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr38
+                0x00000000100440a4        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr44
+                0x00000000100440a8        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr50
+                0x00000000100440ac        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr75
+                0x00000000100440b0        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr81
+                0x00000000100440b4        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr33
-                0x00000000100440a0        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100440b8        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr34
-                0x00000000100440a4        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x00000000100440a8                __binary_info_end = .
+                0x00000000100440bc        0x4 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100440c0                __binary_info_end = .
 
-.rel.dyn        0x00000000100440a8        0x0
- .rel.iplt      0x00000000100440a8        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000100440a8                . = ALIGN (0x4)
+.rel.dyn        0x00000000100440c0        0x0
+ .rel.iplt      0x00000000100440c0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x00000000100440c0                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2564,7 +2564,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020000000       0xc0 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0     0x1194 load address 0x00000000100440a8
+.data           0x00000000200000c0     0x1194 load address 0x00000000100440c0
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2695,36 +2695,36 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.jcr)
                 0x0000000020001254                . = ALIGN (0x4)
                 0x0000000020001254                __data_end__ = .
-                0x00000000100440a8                __etext = LOADADDR (.data)
+                0x00000000100440c0                __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x0000000020001254        0x0 load address 0x000000001004523c
+                0x0000000020001254        0x0 load address 0x0000000010045254
  .tm_clone_table
                 0x0000000020001254        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x0000000020001254        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x0000000020001254        0x0 load address 0x000000001004523c
+.igot.plt       0x0000000020001254        0x0 load address 0x0000000010045254
  .igot.plt      0x0000000020001254        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x0000000020001254        0x0 load address 0x000000001004523c
+                0x0000000020001254        0x0 load address 0x0000000010045254
                 0x0000000020001254                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x000000001004523c
+.scratch_x      0x0000000020040000        0x0 load address 0x0000000010045254
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x000000001004523c                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x0000000010045254                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x000000001004523c
+.scratch_y      0x0000000020041000        0x0 load address 0x0000000010045254
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x000000001004523c                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x0000000010045254                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x0000000020001258     0x4e18
                 0x0000000020001258                . = ALIGN (0x4)
@@ -2921,8 +2921,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x000000001004523c        0x0
-                0x000000001004523c                PROVIDE (__flash_binary_end = .)
+.flash_end      0x0000000010045254        0x0
+                0x0000000010045254                PROVIDE (__flash_binary_end = .)
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2980,7 +2980,7 @@ LOAD CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src
 LOAD CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 LOAD CMakeFiles/web_server.dir/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 LOAD libpicowi.a
-LOAD /tmp/ccWG42Nf.o
+LOAD /tmp/cc2TEN1T.o
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -3100,7 +3100,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000810       0x2c libpicowi.a(picowi_dhcp.c.obj)
  .ARM.attributes
-                0x000000000000083c       0x22 /tmp/ccWG42Nf.o
+                0x000000000000083c       0x22 /tmp/cc2TEN1T.o
  .ARM.attributes
                 0x000000000000085e       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

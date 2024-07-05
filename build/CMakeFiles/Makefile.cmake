@@ -252,6 +252,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/dns.dir/DependInfo.cmake"
   "CMakeFiles/udp_socket_server.dir/DependInfo.cmake"
   "CMakeFiles/web_server.dir/DependInfo.cmake"
+  "CMakeFiles/web_server_usb_rndis.dir/DependInfo.cmake"
   "CMakeFiles/web_cam.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake"
