@@ -29,6 +29,7 @@
 #include "lib/picowi_ioctl.h"
 #include "lib/picowi_event.h"
 #include "lib/picowi_join.h"
+#include "lib/picowi_ip.h"
 
 #include "usbd_core.h"
 #include "usbd_rndis.h"
@@ -41,14 +42,30 @@
 #define EVENT_POLL_USEC     100000
 
 uint8_t rndis_mac[6] = { 0x20, 0x89, 0x84, 0x6A, 0x96, 0xAA };
+extern MACADDR my_mac;
 
+int simple_eth_event_handler(EVENT_INFO *eip)
+{
+    if (eip->chan == SDPCM_CHAN_DATA &&
+        eip->dlen >= sizeof(ETHERHDR))
+    {
+		struct pbuf *out_pkt;
+		out_pkt = pbuf_alloc(PBUF_RAW, eip->dlen, PBUF_POOL);
+		//memcpy(out_pkt->payload, buf, len);
+		pbuf_take(out_pkt, eip->data, eip->dlen);
+        usbd_rndis_eth_tx(out_pkt);
+    }
+    return(1);
+}
 
 int main() 
 {
     uint32_t led_ticks, poll_ticks;
+	struct pbuf *p;
     bool ledon=false;
     set_sys_clock_khz(230000, true);
     add_event_handler(join_event_handler);
+	add_event_handler(simple_eth_event_handler);
     set_display_mode(DISP_INFO);
     io_init();
     usdelay(1000);
@@ -62,7 +79,7 @@ int main()
     else
     {
 		//init the usb stack
-		cdc_rndis_init(rndis_mac);
+		cdc_rndis_init(my_mac);
         // Additional diagnostic display
         //set_display_mode(DISP_INFO|DISP_EVENT|DISP_SDPCM|DISP_REG|DISP_JOIN|DISP_DATA);
         set_display_mode(DISP_INFO|DISP_EVENT|DISP_JOIN);
@@ -70,6 +87,12 @@ int main()
         ustimeout(&poll_ticks, 0);
         while (1)
         {
+			p = usbd_rndis_eth_rx();
+			if (p != NULL) {
+				event_net_tx(p->payload,p->len);
+				pbuf_free(p);
+				p = NULL;
+			}
             // Toggle LED at 1 Hz if joined, 5 Hz if not
             if (ustimeout(&led_ticks, link_check() > 0 ? 500000 : 100000))
                 wifi_set_led(ledon = !ledon);

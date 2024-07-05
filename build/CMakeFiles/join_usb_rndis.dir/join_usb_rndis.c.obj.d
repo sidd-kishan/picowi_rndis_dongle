@@ -25,6 +25,7 @@ CMakeFiles/join_usb_rndis.dir/join_usb_rndis.c.obj: \
  /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/lib/picowi_ioctl.h \
  /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/lib/picowi_event.h \
  /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/lib/picowi_join.h \
+ /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/lib/picowi_ip.h \
  /mnt/c/Users/siddk/Downloads/picowi_rndis_dongle/../PicoPiFi/CherryUSB/core/usbd_core.h \
  /usr/include/newlib/string.h /usr/include/newlib/sys/_locale.h \
  /usr/include/newlib/strings.h /usr/include/newlib/sys/string.h \

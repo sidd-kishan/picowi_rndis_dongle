@@ -36,6 +36,7 @@
 #define SYS_LIGHTWEIGHT_PROT            0
 
 #define NO_SYS                          1
+#define LWIP_STATS                      1
 #define MEM_ALIGNMENT                   4
 #define LWIP_RAW                        0
 #define LWIP_NETCONN                    0

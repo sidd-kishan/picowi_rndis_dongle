@@ -40,6 +40,7 @@ CMakeFiles/join_usb_rndis.dir/join_usb_rndis.c.obj: ../join_usb_rndis.c \
   ../lib/picowi_ioctl.h \
   ../lib/picowi_event.h \
   ../lib/picowi_join.h \
+  ../lib/picowi_ip.h \
   /mnt/c/Users/siddk/Downloads/PicoPiFi/CherryUSB/core/usbd_core.h \
   /usr/include/newlib/string.h \
   /usr/include/newlib/sys/_locale.h \
@@ -2172,6 +2173,10 @@ CMakeFiles/join_usb_rndis.dir/src/lwip.c.obj: ../src/lwip.c \
 
 /usr/include/newlib/time.h:
 
+/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:
+
+/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h:
+
 /mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/include/netif/ppp/ppp_opts.h:
 
 /mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_base/include/pico.h:
@@ -2209,6 +2214,8 @@ generated/pico_base/pico/version.h:
 /mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/hardware_sync/sync.c:
 
 /mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/include/lwip/opt.h:
+
+/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
 
 /usr/include/newlib/sys/timespec.h:
 
@@ -2252,8 +2259,6 @@ generated/pico_base/pico/version.h:
 
 /mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/common/pico_sync/include/pico/critical_section.h:
 
-/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
-
 /usr/include/newlib/machine/stdlib.h:
 
 /mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/core/mem.c:
@@ -2285,10 +2290,6 @@ generated/pico_base/pico/version.h:
 /usr/include/newlib/newlib.h:
 
 /mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio/stdio.c:
-
-/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h:
-
-/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:
 
 /usr/include/newlib/_ansi.h:
 
@@ -2398,9 +2399,11 @@ generated/pico_base/pico/version.h:
 
 /mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h:
 
-generated/pico_base/pico/config_autogen.h:
+../lib/picowi_ip.h:
 
-/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/include/lwip/prot/ip.h:
+/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c:
+
+generated/pico_base/pico/config_autogen.h:
 
 /usr/include/newlib/string.h:
 
@@ -2421,6 +2424,8 @@ generated/pico_base/pico/config_autogen.h:
 /mnt/c/Users/siddk/Downloads/PicoPiFi/CherryUSB/class/wireless/usbd_rndis.h:
 
 /mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/psm.h:
+
+/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/include/lwip/prot/ip.h:
 
 /mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/lib/lwip/src/include/lwip/prot/udp.h:
 
@@ -2577,8 +2582,6 @@ generated/pico_base/pico/config_autogen.h:
 /usr/lib/gcc/arm-none-eabi/10.3.1/include/float.h:
 
 /mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c:
-
-/mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_platform/platform.c:
 
 /mnt/c/Users/siddk/Downloads/PicoPiFi/pico-sdk/src/rp2_common/pico_printf/printf.c:
 
